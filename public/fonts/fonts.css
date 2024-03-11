@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Fredoka';
+  src: url('./Fredoka-VariableFont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: url('./JetBrainsMono.ttf') format('truetype');
+}

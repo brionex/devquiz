@@ -1,0 +1,42 @@
+---
+import Background from '../components/Background.astro'
+import Github from '../icons/github.astro'
+
+interface Props {
+  title: string
+}
+
+const { title } = Astro.props
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+		<link rel="stylesheet" href="/fonts/fonts.css">
+		<script defer src="/src/lib/main.js"></script>
+    <title>{title}</title>
+  </head>
+  <body class="h-[100dvh] flex flex-col">
+    <main class="flex-grow">
+			<Background />
+      <slot />
+    </main>
+		<footer class="text-lg py-5 text-white flex justify-center gap-3">
+			<span>Hecho por</span>
+			<a href="#" class="text-py-yellow flex items-center">
+				<Github />
+				lbrione
+			</a>
+		</footer>
+  </body>
+</html>
+<style is:global>
+	body {
+		font-family: 'JetBrainsMono', Verdana, Geneva, Tahoma, sans-serif;
+	}
+</style>
