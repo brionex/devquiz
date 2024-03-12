@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import { BASE_URL } from '../lib/baseUrl.js'
 ---
 
 <Layout title="Welcome to Astro.">
@@ -7,7 +8,7 @@ import Layout from '../layouts/Layout.astro'
     <figure class="max-w-32">
       <img
         class="drop-shadow-[0_0px_10px_#fff5]"
-        src="/python.svg"
+        src={BASE_URL + '/python.svg'}
         alt="imagen del logo de python"
       />
     </figure>
