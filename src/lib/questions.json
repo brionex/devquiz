@@ -1,3 +1,7 @@
-{
-  
-}
+[
+  {
+    "question": "¿Que es python?",
+    "options": ["python 1", "python 2", "python 3", "python 4"],
+    "correctOption": "python 3"
+  }
+]

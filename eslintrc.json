@@ -1,0 +1,9 @@
+{
+  "extends": ["standard", "standard-jsx"],
+  "rules": {
+    "space-before-function-paren": "off",
+    "no-trailing-spaces": ["error", { "skipBlankLines": true }],
+    "no-multiple-empty-lines": ["error", { "max": 3, "maxEOF": 1 }],
+    "comma-dangle": ["error", "only-multiline"]
+  }
+}

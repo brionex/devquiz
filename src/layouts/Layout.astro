@@ -1,7 +1,5 @@
 ---
 import Background from '../components/Background.astro'
-import Github from '../icons/github.astro'
-import {BASE_URL} from '../lib/baseUrl.js'
 
 interface Props {
   title: string
@@ -16,22 +14,13 @@ const { title } = Astro.props
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href={BASE_URL + "/favicon.svg"} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
   <body class="h-[100dvh] flex flex-col">
-    <main class="flex-grow">
-			<Background />
-      <slot />
-    </main>
-		<footer class="text-lg py-5 text-white flex justify-center gap-3">
-			<span>Hecho por</span>
-			<a href="#" class="text-py-yellow flex items-center">
-				<Github />
-				lbrione
-			</a>
-		</footer>
+    <Background />
+    <slot />
   </body>
 </html>
 
@@ -46,7 +35,9 @@ const { title } = Astro.props
     src: url('/fonts/JetBrainsMono.ttf') format('truetype');
   }
 
-	body {
-		font-family: 'JetBrainsMono', Verdana, Geneva, Tahoma, sans-serif;
-	}
+  body {
+    font-family: 'JetBrainsMono', Verdana, Geneva, Tahoma, sans-serif;
+  }
 </style>
+
+

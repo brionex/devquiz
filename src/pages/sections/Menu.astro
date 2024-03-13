@@ -1,0 +1,31 @@
+<section class="quiz-menu hidden flex flex-col items-center py-14 h-full">
+  <figure>
+    <img
+      class="drop-shadow-[0_0px_10px_#fff5] max-w-32"
+      src="/python.svg"
+      alt="imagen del logo de python"
+    />
+  </figure>
+  <h1 class="text-4xl md:text-7xl font-black text-white my-5">Python Quiz</h1>
+  <div
+    class="flex-grow grid items-end md:items-start place-items-center w-full"
+  >
+    <button
+      class="btn-start border border-white md:mt-10 py-4 text-white text-2xl hover:bg-py-yellow hover:text-black font-semibold transition-colors max-w-[350px] w-full"
+      >Empezar</button
+    >
+  </div>
+</section>
+
+<style>
+  .hide-menu {
+    animation: hide-menu 0.2s forwards ease-in;
+  }
+
+  @keyframes hide-menu {
+    100% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+</style>

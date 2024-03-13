@@ -16,9 +16,14 @@
     "@astrojs/vercel": "^7.3.6",
     "astro": "^4.5.1",
     "tailwindcss": "^3.4.1",
+    "tailwindcss-animated": "^1.0.1",
     "typescript": "^5.4.2"
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.1.1",
+    "standard": "^17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "/eslintrc.json"
   }
 }
