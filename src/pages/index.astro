@@ -2,16 +2,20 @@
 import Layout from '../layouts/Layout.astro'
 import Menu from '../pages/sections/Menu.astro'
 import Question from '../pages/sections/Question.astro'
+import Results from '../pages/sections/Results.astro'
 import Github from '../icons/github.astro'
 ---
 
 <Layout title="Dev Quiz">
-  <main class="flex-grow mx-auto w-[80%]">
+  <main class="flex-grow mx-auto w-[80%] overflow-hidden">
     <Menu />
     <Question />
+    <Results />
   </main>
 
-  <footer class="text-lg py-5 text-white flex justify-center gap-3 items-center font-['Fredoka']">
+  <footer
+    class="text-lg py-5 text-white flex justify-center gap-3 items-center font-['Fredoka']"
+  >
     <span>Hecho por</span>
     <a
       target="_blank"
@@ -21,7 +25,54 @@ import Github from '../icons/github.astro'
       <Github />
       lbrione
     </a>
+    <a href="/a">Ir </a>
   </footer>
 </Layout>
+
+<style>
+  @keyframes hide-elem {
+    20% {
+      transform: translateY(50px);
+    }
+    100% {
+      transform: translateY(-200%);
+      opacity: 0;
+      display: none;
+    }
+  }
+
+  @keyframes show-elem {
+    0% {
+      transform: translateY(-200%);
+      opacity: 0;
+    }
+    80% {
+      transform: translateY(50px);
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes hide-show-elem {
+    10% {
+      transform: translateY(30px);
+    }
+    50% {
+      transform: translateY(-200%);
+      opacity: 0;
+    }
+
+    80% {
+      transform: translateY(30px);
+    }
+
+    100% {
+      ransform: translateY(0);
+      opacity: 1;
+    }
+  }
+</style>
 
 <script src="../lib/main.js"></script>

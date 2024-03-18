@@ -1,54 +1,56 @@
-const $ = (selector) => document.querySelector(selector)
+import { glideText } from '../lib/glideText/glideText.js'
+import '../lib/glideText/glideText.css'
+
+const $ = (selector, context = document) => context.querySelector(selector)
 
 const $quizMenu = $('.quiz-menu')
-const $btnStart = $('.btn-start')
-const $quizQuestionSec = $('.quiz-questionSec')
-const $quizProgress = $('.quiz-progress')
 const $quizQuestion = $('.quiz-question')
-const $quizOptions = $('.quiz-options')
-const $questionsJson = $('[data-json]')
+const $progress = $('.progress', $quizQuestion)
+const $question = $('.question', $quizQuestion)
+const $options = $('.options', $quizQuestion)
 
-const questions = JSON.parse($questionsJson.dataset.json)
-const questionShown = 0
+const questions = JSON.parse($('[data-json]').dataset.json)
+let currentQuestion = 0
 
+function setQuestion() {
+  glideText('.progress-number', currentQuestion+1)
+  glideText('.question', questions[currentQuestion].question)
 
-
-function showQuestion() {
-  $quizProgress.textContent = `Pregunta ${questionShown+1} de ${questions.length}`
-  $quizQuestion.textContent = questions[questionShown].question
-
-
-  Array.from($quizOptions.children).forEach((elem, i) => {
-    elem.textContent = questions[questionShown].options[i]
-  });
+  Array.from($options.children).forEach((elem, i) => {
+    glideText(elem, questions[currentQuestion].options[i])
+    elem.classList.remove('correct', 'incorrect')
+  })
 }
 
-
 function checkOption({target}) {
-  if (target.tagName !== 'LI') return 
+  if (target.tagName !== 'BUTTON') return
 
-  if (target.textContent === questions[questionShown].correctOption) {
+  if (target.textContent === questions[currentQuestion].correctAnswer) {
     target.classList.add('correct')
   }
   else {
     target.classList.add('incorrect')
   }
+
+  currentQuestion++
+
+  setTimeout(() => {
+    if (currentQuestion === questions.length) {
+      alert('fin')
+      return
+    }
+    setQuestion()
+  }, 1000)
 }
 
-
-// Funciones de inicio
-function startQuiz() {
-  $quizMenu.classList.add('hide-menu')
+function startQuiz({ target }) {
+  if (target.tagName === 'BUTTON') {
+    $quizMenu.classList.add('hide-menu')
+    $quizQuestion.classList.add('show-question')
+    setQuestion()
+  }
 }
 
-function hideQuizMenu() {
-  $quizMenu.classList.add('hidden')
-  $quizQuestionSec.classList.remove('hidden')
-  $quizMenu.removeEventListener('animationend', showQuestion)
-  showQuestion()
-}
-showQuestion()
-
-$btnStart.addEventListener('click', startQuiz)
-$quizMenu.addEventListener('animationend', hideQuizMenu)
-$quizOptions.addEventListener('click', checkOption)
+// Events section
+$quizMenu.addEventListener('click', startQuiz)
+$quizQuestion.addEventListener('click', checkOption)

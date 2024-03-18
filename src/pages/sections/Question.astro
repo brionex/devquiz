@@ -6,22 +6,20 @@ const json = JSON.stringify(QuestionsJson)
 
 <section
   data-json={json}
-  class="quiz-questionSec py-10 flex flex-col gap-11 text-white"
+  class="quiz-question hidden py-10 flex-col gap-11 text-white"
 >
-  <p
-    class="quiz-progress font-['Fredoka'] text-xl text-center drop-shadow-sm"
-  >
-    Pregunta 1 de 20
+  <p class="progress font-['Fredoka'] gap-2 text-xl text-center drop-shadow-sm flex items-center justify-center">
+    Pregunta <span class="glide-text progress-number">0</span> de {QuestionsJson.length}
   </p>
-  <p class="quiz-question text-5xl text-center font-bold">Pregunta de python</p>
-  <ul
-    class="quiz-options grid grid-cols-1 place-items-center *:py-3 *:border gap-3 *:text-center *:w-[80%] hover:*:text-black *:max-w-[400px] hover:*:bg-py-yellow cursor-default *:font-medium text-lg"
+  <p class="glide-text question text-5xl text-center font-bold">Pregunta</p>
+  <div
+    class="options grid grid-cols-1 place-items-center *:py-3 *:border gap-3 *:text-center *:w-[90%] md:*:w-[80%] hover:*:text-black *:max-w-[400px] hover:*:bg-py-yellow cursor-default *:font-medium text-lg"
   >
-    <li>opcion 1</li>
-    <li>opcion 2</li>
-    <li>opcion 3</li>
-    <li>opcion 4</li>
-  </ul>
+    <button class="glide-text">opcion</button>
+    <button class="glide-text">opcion</button>
+    <button class="glide-text">opcion</button>
+    <button class="glide-text">opcion</button>
+  </div>
 </section>
 
 <style>
@@ -32,17 +30,8 @@ const json = JSON.stringify(QuestionsJson)
     @apply bg-green-400 hover:bg-green-400 text-white scale-110 transition-transform;
   }
 
-
-  .quiz-questionSec {
-    opacity: 0;
-    transform: translateY(-100%);
-    animation: show-question 0.2s forwards;
-  }
-
-  @keyframes show-question {
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  section.show-question {
+    display: flex;
+    animation: show-elem 0.3s both 0.5s;
   }
 </style>

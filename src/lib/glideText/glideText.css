@@ -1,0 +1,48 @@
+.glide-text {
+  display: inline-block;
+  overflow: hidden;
+  line-height: normal;
+  position: relative;
+}
+
+.glide-text span {
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.glide-text span.text-in {
+  display: block;
+  animation: textIn 0.5s ease;
+}
+
+.glide-text span.text-out {
+  position: absolute;
+  display: block;
+  animation: textOut 0.5s ease;
+}
+
+@keyframes textIn {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes textOut {
+  0% {
+    transform: translateY(0%);
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
