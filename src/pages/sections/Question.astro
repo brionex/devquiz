@@ -8,10 +8,10 @@ const json = JSON.stringify(QuestionsJson)
   data-json={json}
   class="quiz-question hidden py-10 flex-col gap-11 text-white"
 >
-  <p class="progress font-['Fredoka'] gap-2 text-xl text-center drop-shadow-sm flex items-center justify-center">
+  <p class="progress font-['Fredoka'] gap-2 text-xl text-center drop-shadow-sm flex items-center justify-center text-gray-300">
     Pregunta <span class="glide-text progress-number">0</span> de {QuestionsJson.length}
   </p>
-  <p class="glide-text question text-5xl text-center font-bold">Pregunta</p>
+  <h2 class="glide-text question text-3xl text-center font-bold">Pregunta</h2>
   <div
     class="options grid grid-cols-1 place-items-center *:py-3 *:border gap-3 *:text-center *:w-[90%] md:*:w-[80%] hover:*:text-black *:max-w-[400px] hover:*:bg-py-yellow cursor-default *:font-medium text-lg"
   >
@@ -23,11 +23,49 @@ const json = JSON.stringify(QuestionsJson)
 </section>
 
 <style>
+  div:has(.correct, .incorrect) {
+    pointer-events: none;
+  }
+
   .incorrect {
-    @apply bg-red-400 hover:bg-red-400 text-white scale-110 transition-transform;
+    @apply bg-red-400 hover:bg-red-400 text-white;
+    animation: incorrect .6s;
   }
   .correct {
-    @apply bg-green-400 hover:bg-green-400 text-white scale-110 transition-transform;
+    @apply bg-green-400 hover:bg-green-400 text-white;
+    animation: correct .6s forwards;
+  }
+
+  @keyframes incorrect {
+    10% {
+      transform: scale(1.3);
+    }
+
+    25% {
+      transform: scale(1.3) rotate(-10deg);
+    }
+
+    50% {
+      transform: scale(1.3) rotate(10deg);
+    }
+
+    75% {
+      transform: scale(1.3) rotate(-10deg);
+    }
+
+    100% {
+      transform: scale(1) rotate(0);
+    }
+  }
+
+  @keyframes correct {
+    50% {
+      transform: scale(1.5);
+    }
+
+    100% {
+      transform: scale(1.3);
+    }
   }
 
   section.show-question {

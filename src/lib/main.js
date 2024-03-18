@@ -40,7 +40,7 @@ function checkOption({target}) {
       return
     }
     setQuestion()
-  }, 1000)
+  }, 1500)
 }
 
 function startQuiz({ target }) {
