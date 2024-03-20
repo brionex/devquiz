@@ -1,18 +1,52 @@
-<section class="h-[200px] bg-red-500 hidden">
-  
-</section>
+<section class="flex flex-col gap-5">
+  <h2 class="text-white text-4xl font-bold text-center mt-10 hidden">Resultados</h2>
 
+  <div>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+    <span>6</span>
+    <span>7</span>
+    <span>8</span>
+    <span>9</span>
+    <span>10</span>
+    <span>10</span>
+    <span>10</span>
+    <span>10</span>
+    <span>10</span>
+    <span>10</span>
+    <span>10</span>
+    <span>10</span>
+    <span>10</span>
+    <span>10</span>
+    <span>10</span>
+    <span>10</span>
+    <span>10</span>
+    <span>10</span>
+    <span>10</span>
+    <span>10</span>
+    <span>10</span>
+    <span>10</span>
+  </div>
+</section>
 
 <style>
   section:not(.hidden) {
-    display: flex;
+    display: none;
   }
 
-  section {
-    transform: translateY(200%);
+  div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   }
 
-  body:hover section{
-    transform: translateY(0);
-  } 
+  div span {
+    display: grid;
+    color: white;
+    place-items: center;
+    aspect-ratio: 1/1;
+    border: 1px solid;
+  }
 </style>

@@ -5,8 +5,6 @@ const $ = (selector, context = document) => context.querySelector(selector)
 
 const $quizMenu = $('.quiz-menu')
 const $quizQuestion = $('.quiz-question')
-const $progress = $('.progress', $quizQuestion)
-const $question = $('.question', $quizQuestion)
 const $options = $('.options', $quizQuestion)
 
 const questions = JSON.parse($('[data-json]').dataset.json)
@@ -40,7 +38,7 @@ function checkOption({target}) {
       return
     }
     setQuestion()
-  }, 1500)
+  }, 0)
 }
 
 function startQuiz({ target }) {
