@@ -1,0 +1,32 @@
+---
+import Layout from '@layouts/Layout.astro'
+import Github from '@components/Github.astro'
+import Header from '@components/Header.astro'
+import QuizCard from '@components/QuizCard.astro'
+import Footer from '@components/Footer.astro'
+
+const quizzes = await Astro.glob('@quizzes/*.json')
+---
+
+<Layout title="DevQuiz">
+  <Github />
+  <main class="relative h-screen flex flex-col font-menlo text-white px-10">
+    <Header />
+
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      {
+        quizzes.map(({ id, name, image, questions, difficulty }) => (
+          <QuizCard
+            id={id}
+            name={name}
+            image={image}
+            numQuestions={questions.length}
+            difficulty={difficulty}
+          />
+        ))
+      }
+    </section>
+
+    <Footer />
+  </main>
+</Layout>

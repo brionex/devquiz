@@ -1,0 +1,64 @@
+<div class="fixed -z-10 inset-0 bg-dark-navy overflow-hidden">
+  <div>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<style>
+  div div {
+    animation: show-bg 1s 500ms ease-in-out both;
+
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      inset: 0;
+      position: absolute;
+      z-index: -1;
+    }
+
+    &::before {
+      background-image: url('./../images/noise.png');
+    }
+
+    &::after {
+      background: radial-gradient(
+          ellipse 100% 90% at center bottom,
+          theme('colors.dark-navy/.5'),
+          theme('colors.dark-navy')
+        )
+        100% 100%;
+    }
+
+    span {
+      display: block;
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      filter: blur(150px);
+      border-radius: 100%;
+    }
+
+    span:nth-child(1) {
+      background-color: theme('colors.bright-pink/.4');
+      left: -10%;
+      bottom: -50%;
+    }
+
+    span:nth-child(2) {
+      background-color: theme('colors.light-blue/.4');
+      right: -10%;
+      bottom: -50%;
+    }
+  }
+
+  @keyframes show-bg {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+</style>

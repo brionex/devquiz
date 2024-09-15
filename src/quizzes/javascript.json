@@ -1,0 +1,207 @@
+{
+  "id": "d658a72651fc897576873cf2c",
+  "name": "JavaScript",
+  "image": "https://cdn.svgporn.com/logos/javascript.svg",
+  "questions": [
+    {
+      "question": "¿JavaScript es un lenguaje de alto nivel e interpretado?",
+      "correctAnswer": "Sí",
+      "options": [
+        "Sí",
+        "No",
+        "A veces",
+        "Depende"
+      ]
+    },
+    {
+      "question": "¿Principal función de JavaScript en desarrollo web?",
+      "correctAnswer": "Agregar interactividad",
+      "options": [
+        "Agregar interactividad",
+        "Estilos y diseños atractivos",
+        "Consultas a bases de datos",
+        "Definir estructura y contenido"
+      ]
+    },
+    {
+      "question": "¿Cuál es la forma correcta de incluir JavaScript en HTML?",
+      "correctAnswer": "&lt;script src=\"archivo.js\"&gt;&lt;/script&gt;",
+      "options": [
+        "&lt;script src=\"archivo.js\"&gt;&lt;/script&gt;",
+        "&lt;script&gt;codigo.js&lt;/script&gt;",
+        "&lt;javascript src=\"archivo.js\"&gt;&lt;/js&gt;",
+        "&lt;script href=\"archivo.js\"&gt;&lt;/script&gt;"
+      ]
+    },
+    {
+      "question": "¿Cuál de las siguientes palabras clave se utiliza comúnmente para declarar variables en JavaScript?",
+      "correctAnswer": "let",
+      "options": [
+        "var",
+        "let",
+        "const",
+        "variable"
+      ]
+    },
+    {
+      "question": "¿Qué tipo de dato representa 'true' en JavaScript?",
+      "correctAnswer": "Boolean",
+      "options": [
+        "Boolean",
+        "String",
+        "Number",
+        "Object"
+      ]
+    },
+    {
+      "question": "¿Qué hace el método console.log() en JavaScript?",
+      "correctAnswer": "Muestra mensajes en consola",
+      "options": [
+        "Muestra mensajes en consola",
+        "Ventana emergente",
+        "Registro de errores",
+        "No hace nada"
+      ]
+    },
+    {
+      "question": "Resultado de '5' + 3 en JavaScript?",
+      "correctAnswer": "'53'",
+      "options": [
+        "'53'",
+        "8",
+        "'8'",
+        "Error"
+      ]
+    },
+    {
+      "question": "¿Cuál es el operador para concatenar cadenas en JavaScript?",
+      "correctAnswer": "+",
+      "options": [
+        "+",
+        "&",
+        "*",
+        "-"
+      ]
+    },
+    {
+      "question": "Palabra clave para declarar función en JavaScript?",
+      "correctAnswer": "function",
+      "options": [
+        "function",
+        "func",
+        "method",
+        "def"
+      ]
+    },
+    {
+      "question": "Resultado de 10 == '10' en JavaScript?",
+      "correctAnswer": "true",
+      "options": [
+        "true",
+        "false",
+        "Error",
+        "NaN"
+      ]
+    },
+    {
+      "question": "¿Qué tipo de lenguaje es JavaScript?",
+      "correctAnswer": "Alto nivel e interpretado",
+      "options": [
+        "Compilado",
+        "Bajo nivel",
+        "Alto nivel e interpretado",
+        "Marcado"
+      ]
+    },
+    {
+      "question": "¿Cuál es la unidad de medida relativa en CSS?",
+      "correctAnswer": "em",
+      "options": [
+        "px",
+        "em",
+        "rem",
+        "%"
+      ]
+    },
+    {
+      "question": "¿Forma correcta de incluir CSS en HTML?",
+      "correctAnswer": "&lt;link rel=\"stylesheet\" href=\"estilos.css\"&gt;",
+      "options": [
+        "&lt;style&gt;&lt;/style&gt;",
+        "&lt;link rel=\"stylesheet\" href=\"estilos.css\"&gt;",
+        "&lt;css&gt;&lt;/css&gt;",
+        "&lt;stylesheet&gt;&lt;/stylesheet&gt;"
+      ]
+    },
+    {
+      "question": "¿Cómo se comenta una línea en JavaScript?",
+      "correctAnswer": "// comentario",
+      "options": [
+        "// comentario",
+        "/* comentario */",
+        "<!-- comentario -->",
+        "-- comentario --"
+      ]
+    },
+    {
+      "question": "¿Cuál es el resultado de 10 / 3 en JavaScript?",
+      "correctAnswer": "3.3333333333333335",
+      "options": [
+        "3.3333",
+        "3.33",
+        "3.3333333333333335",
+        "3"
+      ]
+    },
+    {
+      "question": "¿Qué hace el método parseInt() en JavaScript?",
+      "correctAnswer": "Convierte una cadena en un número entero",
+      "options": [
+        "Convierte una cadena en un número entero",
+        "Convierte un número en una cadena",
+        "Devuelve el valor absoluto de un número",
+        "No hace nada"
+      ]
+    },
+    {
+      "question": "¿Cuál es el resultado de 'JavaScript'.length?",
+      "correctAnswer": "10",
+      "options": [
+        "9",
+        "11",
+        "10",
+        "Error"
+      ]
+    },
+    {
+      "question": "¿Cuál es el operador de asignación en JavaScript?",
+      "correctAnswer": "=",
+      "options": [
+        "=",
+        "==",
+        "===",
+        ":="
+      ]
+    },
+    {
+      "question": "¿Qué método se utiliza para agregar un elemento al final de un array en JavaScript?",
+      "correctAnswer": "push()",
+      "options": [
+        "add()",
+        "insert()",
+        "append()",
+        "push()"
+      ]
+    },
+    {
+      "question": "¿Cuál es el resultado de 5 + '5' en JavaScript?",
+      "correctAnswer": "'55'",
+      "options": [
+        "55",
+        "'55'",
+        "Error",
+        "10"
+      ]
+    }
+  ]
+}

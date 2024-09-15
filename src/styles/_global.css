@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Menlo';
+    src: url('src/fonts/Menlo-Regular.woff') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'JetBrainsMono';
+    src: url('src/fonts/jetBraindsMono/JetBrainsMono-Light.woff2') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'JetBrainsMono';
+    src: url('src/fonts/jetBraindsMono/JetBrainsMono-Regular.woff2') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'JetBrainsMono';
+    src: url('src/fonts/jetBraindsMono/JetBrainsMono-Bold.woff2') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'JetBrainsMono';
+    src: url('src/fonts/jetBraindsMono/JetBrainsMono-ExtraBold.woff2') format('truetype');
+  }
+}

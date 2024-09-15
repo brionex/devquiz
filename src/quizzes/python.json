@@ -1,0 +1,207 @@
+{
+  "id": "6d3186697b9c4a2cb6208f36f",
+  "name": "Python",
+  "image": "https://cdn.svgporn.com/logos/python.svg",
+  "questions": [
+    {
+      "question": "¿Resultado de 2 + 2 en Python?",
+      "correctAnswer": "4",
+      "options": [
+        "4",
+        "22",
+        "5",
+        "10"
+      ]
+    },
+    {
+      "question": "¿Cómo imprimir 'Hola mundo' en Python?",
+      "correctAnswer": "print('Hola mundo')",
+      "options": [
+        "print('Hola mundo')",
+        "echo 'Hola mundo'",
+        "println('Hola mundo')",
+        "printf('Hola mundo')"
+      ]
+    },
+    {
+      "question": "Tipo de datos de 'True' en Python",
+      "correctAnswer": "Boolean",
+      "options": [
+        "String",
+        "Boolean",
+        "Integer",
+        "Float"
+      ]
+    },
+    {
+      "question": "Operador para elevar a potencia en Python",
+      "correctAnswer": "**",
+      "options": [
+        "**",
+        "^",
+        "^^",
+        "*^"
+      ]
+    },
+    {
+      "question": "Cuál es el lenguaje interpretado?",
+      "correctAnswer": "Python",
+      "options": [
+        "C",
+        "Java",
+        "Python",
+        "C++"
+      ]
+    },
+    {
+      "question": "Qué devuelve la función len()?",
+      "correctAnswer": "Longitud",
+      "options": [
+        "Longitud",
+        "Lista",
+        "Iterador",
+        "Tipo de dato"
+      ]
+    },
+    {
+      "question": "Tipo de dato para texto en Python",
+      "correctAnswer": "Str",
+      "options": [
+        "Str",
+        "String",
+        "Txt",
+        "Text"
+      ]
+    },
+    {
+      "question": "Cómo se declara una lista vacía?",
+      "correctAnswer": "[]",
+      "options": [
+        "list()",
+        "{}",
+        "[]",
+        "list[]"
+      ]
+    },
+    {
+      "question": "Operador de pertenencia en Python",
+      "correctAnswer": "in",
+      "options": [
+        "in",
+        "of",
+        "is",
+        "at"
+      ]
+    },
+    {
+      "question": "Método para agregar elemento a lista",
+      "correctAnswer": "append()",
+      "options": [
+        "append()",
+        "push()",
+        "add()",
+        "insert()"
+      ]
+    },
+    {
+      "question": "Cómo se representa un comentario en Python?",
+      "correctAnswer": "#",
+      "options": [
+        "//",
+        "/* */",
+        "#",
+        "--"
+      ]
+    },
+    {
+      "question": "Cuál es el valor booleano de True?",
+      "correctAnswer": "True",
+      "options": [
+        "1",
+        "0",
+        "True",
+        "False"
+      ]
+    },
+    {
+      "question": "Cuál es el resultado de 'hola' + 'mundo'?",
+      "correctAnswer": "holamundo",
+      "options": [
+        "holamundo",
+        "'hola' + 'mundo'",
+        "hola mundo",
+        "Error"
+      ]
+    },
+    {
+      "question": "Cuál es el operador para división entera?",
+      "correctAnswer": "//",
+      "options": [
+        "/",
+        "//",
+        "%",
+        "div"
+      ]
+    },
+    {
+      "question": "Tipo de datos para números enteros",
+      "correctAnswer": "Int",
+      "options": [
+        "Int",
+        "Integer",
+        "Number",
+        "Num"
+      ]
+    },
+    {
+      "question": "Cómo se verifica si dos objetos son iguales?",
+      "correctAnswer": "==",
+      "options": [
+        "==",
+        "===",
+        "=",
+        "equals()"
+      ]
+    },
+    {
+      "question": "Operador de asignación en Python",
+      "correctAnswer": "=",
+      "options": [
+        "=",
+        "==",
+        ":=",
+        "->"
+      ]
+    },
+    {
+      "question": "Método para eliminar último elemento de lista",
+      "correctAnswer": "pop()",
+      "options": [
+        "pop()",
+        "delete()",
+        "remove()",
+        "last()"
+      ]
+    },
+    {
+      "question": "Cómo se declara una tupla vacía?",
+      "correctAnswer": "()",
+      "options": [
+        "{}",
+        "tupla()",
+        "()",
+        "tuple{}"
+      ]
+    },
+    {
+      "question": "Qué devuelve la función range(5)?",
+      "correctAnswer": "Lista de 0 a 4",
+      "options": [
+        "Lista de 0 a 5",
+        "Lista de 1 a 5",
+        "Lista de 1 a 4",
+        "Lista de 0 a 4"
+      ]
+    }
+  ]
+}
