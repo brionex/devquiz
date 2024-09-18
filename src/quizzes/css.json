@@ -1,12 +1,12 @@
 {
   "id": "077a76adf7aad96866c0b8916",
-  "name": "CSS",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png",
-  "difficulty": "medium",
+  "quizTitle": "Quiz de CSS",
+  "quizImage": "/css.svg",
+  "difficulty": "low",
   "questions": [
     {
       "question": "¿Qué significa CSS?",
-      "correctAnswer": "Cascading Style Sheets",
+      "correctOption": "Cascading Style Sheets",
       "options": [
         "Cascading Style Sheets",
         "Computer Style Sheets",
@@ -16,7 +16,7 @@
     },
     {
       "question": "¿Cuál es la propiedad CSS para cambiar el color de fondo?",
-      "correctAnswer": "background-color",
+      "correctOption": "background-color",
       "options": [
         "color",
         "background-color",
@@ -26,7 +26,7 @@
     },
     {
       "question": "¿Cómo se selecciona un elemento por su ID en CSS?",
-      "correctAnswer": "#id",
+      "correctOption": "#id",
       "options": [
         "#id",
         ".class",
@@ -36,7 +36,7 @@
     },
     {
       "question": "¿Cuál es la sintaxis CSS para comentar una sola línea?",
-      "correctAnswer": "// comentario",
+      "correctOption": "/* comentario */",
       "options": [
         "/* comentario */",
         "// comentario",
@@ -45,8 +45,8 @@
       ]
     },
     {
-      "question": "¿Qué propiedad CSS se utiliza para establecer el espaciado entre las letras?",
-      "correctAnswer": "letter-spacing",
+      "question": "¿Qué propiedad CSS se utiliza para el espaciado entre las letras?",
+      "correctOption": "letter-spacing",
       "options": [
         "line-height",
         "spacing",
@@ -55,8 +55,8 @@
       ]
     },
     {
-      "question": "¿Cuál es la unidad de medida más comúnmente utilizada en CSS?",
-      "correctAnswer": "px (píxeles)",
+      "question": "¿Cuál es la unidad de medida más común en CSS?",
+      "correctOption": "px (píxeles)",
       "options": [
         "em",
         "px (píxeles)",
@@ -65,8 +65,8 @@
       ]
     },
     {
-      "question": "¿Cuál es la regla CSS para ocultar un elemento de la página sin eliminarlo del diseño?",
-      "correctAnswer": "display: none;",
+      "question": "¿Cuál es la regla CSS para ocultar un elemento sin eliminarlo del diseño?",
+      "correctOption": "display: none;",
       "options": [
         "visibility: hidden;",
         "display: none;",
@@ -76,7 +76,7 @@
     },
     {
       "question": "¿Qué propiedad se utiliza para especificar el estilo de un borde en CSS?",
-      "correctAnswer": "border-style",
+      "correctOption": "border-style",
       "options": [
         "border-style",
         "border",
@@ -86,7 +86,7 @@
     },
     {
       "question": "¿Cómo se seleccionan todos los elementos en CSS?",
-      "correctAnswer": "*",
+      "correctOption": "*",
       "options": [
         ".all",
         "#all",
@@ -95,8 +95,8 @@
       ]
     },
     {
-      "question": "¿Cuál es la propiedad CSS que se utiliza para aplicar sombras a los elementos?",
-      "correctAnswer": "box-shadow",
+      "question": "¿Cuál es la propiedad CSS que aplica sombras a los elementos?",
+      "correctOption": "box-shadow",
       "options": [
         "shadow",
         "text-shadow",
@@ -106,7 +106,7 @@
     },
     {
       "question": "¿Qué propiedad se utiliza para especificar el tamaño de la letra en CSS?",
-      "correctAnswer": "font-size",
+      "correctOption": "font-size",
       "options": [
         "text-size",
         "font-style",
@@ -115,8 +115,8 @@
       ]
     },
     {
-      "question": "¿Cuál de estas unidades de medida en CSS es relativa al tamaño de la fuente del elemento padre?",
-      "correctAnswer": "em",
+      "question": "¿Cuál de estas unidades en CSS es relativa al tamaño de la fuente del elemento padre?",
+      "correctOption": "em",
       "options": [
         "px",
         "em",
@@ -126,7 +126,7 @@
     },
     {
       "question": "¿Qué propiedad se utiliza para centrar un elemento horizontalmente en CSS?",
-      "correctAnswer": "margin: 0 auto;",
+      "correctOption": "margin: 0 auto;",
       "options": [
         "text-align: center;",
         "margin: auto;",
@@ -136,7 +136,7 @@
     },
     {
       "question": "¿Cómo se especifica el color del texto en CSS?",
-      "correctAnswer": "color",
+      "correctOption": "color",
       "options": [
         "text-color",
         "color",
@@ -145,8 +145,8 @@
       ]
     },
     {
-      "question": "¿Qué valor se utiliza para ocultar un elemento de la pantalla, pero mantenerlo accesible para los lectores de pantalla?",
-      "correctAnswer": "visibility: hidden;",
+      "question": "¿Qué valor oculta un elemento de la pantalla pero lo mantiene accesible para los lectores de pantalla?",
+      "correctOption": "visibility: hidden;",
       "options": [
         "opacity: 0;",
         "visibility: hidden;",

@@ -1,14 +1,14 @@
 {
   // El atributo "id" se genera ejecutando el script "setid.js"
-  // Las opciones deben ser de máximo 50 caracteres
+  // Las opciones deben ser de máximo 40 caracteres
   "id": "",
-  "name": "Quiz Title",
-  "image": "Image or Logo",
+  "quizTitle": "Quiz Title",
+  "quizImage": "Image or Logo",
   "difficulty": "low | medium | high",
   "questions": [
     {
-      "question": "Question",
-      "correctAnswer": "Correct Answer",
+      "questionText": "Question",
+      "correctOption": "Correct Answer",
       "options": [
         "Option 1",
         "Option 2",
