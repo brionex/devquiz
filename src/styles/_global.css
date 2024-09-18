@@ -10,21 +10,25 @@
 
   @font-face {
     font-family: 'JetBrainsMono';
-    src: url('src/fonts/jetBraindsMono/JetBrainsMono-Light.woff2') format('truetype');
+    src: url('src/fonts/JetBrainsMono/JetBrainsMono-Light.woff2') format('truetype');
   }
 
   @font-face {
     font-family: 'JetBrainsMono';
-    src: url('src/fonts/jetBraindsMono/JetBrainsMono-Regular.woff2') format('truetype');
+    src: url('src/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2') format('truetype');
   }
 
   @font-face {
     font-family: 'JetBrainsMono';
-    src: url('src/fonts/jetBraindsMono/JetBrainsMono-Bold.woff2') format('truetype');
+    src: url('src/fonts/JetBrainsMono/JetBrainsMono-Bold.woff2') format('truetype');
   }
 
   @font-face {
     font-family: 'JetBrainsMono';
-    src: url('src/fonts/jetBraindsMono/JetBrainsMono-ExtraBold.woff2') format('truetype');
+    src: url('src/fonts/JetBrainsMono/JetBrainsMono-ExtraBold.woff2') format('truetype');
+  }
+
+  body {
+    @apply font-menlo;
   }
 }
