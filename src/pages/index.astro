@@ -1,27 +1,37 @@
 ---
 import Layout from '@layouts/Layout.astro'
+import Background from '@components/Background.astro'
 import Github from '@components/Github.astro'
 import Header from '@components/Header.astro'
-import QuizCard from '@components/QuizCard.astro'
+import QuizCard from '@components/Card.astro'
 import Footer from '@components/Footer.astro'
+import type { Quiz } from '@ts/quiz.ts'
 
-const quizzes = await Astro.glob('@quizzes/*.json')
+const quizzes: Quiz[] = await Astro.glob('@quizzes/*.json')
+
+const difficulty = {
+  low: 'Fácil',
+  medium: 'Medio',
+  high: 'Difícil',
+}
 ---
 
 <Layout title="DevQuiz">
+  <Background animation />
+
   <Github />
-  <main class="relative h-screen flex flex-col font-menlo text-white px-10">
+  <main class="flex flex-col gap-20 py-20 text-white px-10">
     <Header />
 
     <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
       {
-        quizzes.map(({ id, name, image, questions, difficulty }) => (
+        quizzes.map((quiz) => (
           <QuizCard
-            id={id}
-            name={name}
-            image={image}
-            numQuestions={questions.length}
-            difficulty={difficulty}
+            id={quiz.id}
+            title={quiz.quizTitle}
+            image={quiz.quizImage}
+            numQuestions={quiz.questions.length}
+            difficulty={difficulty[quiz.difficulty]}
           />
         ))
       }
