@@ -1,5 +1,14 @@
+---
+interface Props {
+  animation?: boolean
+}
+
+const { animation } = Astro.props
+const animationClass = animation ? 'animate-bg' : ''
+---
+
 <div class="fixed -z-10 inset-0 bg-dark-navy overflow-hidden">
-  <div>
+  <div class={animationClass}>
     <span></span>
     <span></span>
   </div>
@@ -7,7 +16,9 @@
 
 <style>
   div div {
-    animation: show-bg 1s 500ms ease-in-out both;
+    &.animate-bg {
+      animation: show-bg 500ms 200ms ease-in-out both;
+    }
 
     &::before,
     &::after {
@@ -19,7 +30,7 @@
     }
 
     &::before {
-      background-image: url('./../images/noise.png');
+      background-image: url('/noise.png');
     }
 
     &::after {
@@ -37,7 +48,6 @@
       width: 500px;
       height: 500px;
       filter: blur(150px);
-      border-radius: 100%;
     }
 
     span:nth-child(1) {
@@ -59,6 +69,14 @@
     }
     100% {
       opacity: 1;
+    }
+  }
+
+  @media screen and (width < 600px) {
+    div div {
+      span {
+        display: none;
+      }
     }
   }
 </style>
