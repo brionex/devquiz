@@ -2,7 +2,6 @@
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import '@styles/_global.css'
 import { ViewTransitions } from 'astro:transitions'
-import Background from '@components/Background.astro'
 
 interface Props {
   title: string
@@ -23,7 +22,6 @@ const { title } = Astro.props
     <ViewTransitions />
   </head>
   <body>
-    <Background />
     <slot />
   </body>
 </html>
