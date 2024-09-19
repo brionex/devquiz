@@ -5,7 +5,7 @@ import Github from '@components/Github.astro'
 import Header from '@components/Header.astro'
 import QuizCard from '@components/Card.astro'
 import Footer from '@components/Footer.astro'
-import type { Quiz } from '@ts/quiz.ts'
+import type { Quiz } from '@ts/types.ts'
 
 const quizzes: Quiz[] = await Astro.glob('@quizzes/*.json')
 
