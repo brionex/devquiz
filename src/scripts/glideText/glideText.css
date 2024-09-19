@@ -1,0 +1,52 @@
+.glide-hide {
+  visibility: hidden;
+}
+
+.glide-text {
+  --time: 1000ms;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  vertical-align: top;
+
+  .glide-text-out,
+  .glide-text-in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .glide-text-out {
+    animation: textOut var(--time) ease forwards;
+  }
+
+  .glide-text-in {
+    animation: textIn var(--time) ease forwards;
+  }
+}
+
+
+@keyframes textIn {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes textOut {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}

@@ -1,0 +1,54 @@
+---
+import Layout from '@layouts/Layout.astro'
+import Background from '@components/Background.astro'
+import QuizHeader from '@components/QuizHeader.astro'
+import Option from '@components/Option.astro'
+import type { StaticPaths, QuizJson } from '@ts/types.ts'
+
+interface Props {
+  quiz: QuizJson
+}
+
+export async function getStaticPaths(): Promise<StaticPaths[]> {
+  const quizzes = await Astro.glob('@quizzes/*.json')
+
+  return quizzes.map((quiz) => ({
+    params: { quiz: quiz.id },
+    props: { quiz: quiz },
+  }))
+}
+
+const { quiz } = Astro.props
+const quizData = btoa(JSON.stringify(quiz.default))
+---
+
+<Layout title={quiz.quizTitle}>
+  <Background />
+
+  <main
+    class="flex flex-col max-w-screen-md px-5 md:px-0 gap-10 mx-auto text-white pt-8"
+  >
+    <QuizHeader
+      title={quiz.quizTitle}
+      numQuestions={quiz.questions.length}
+      image={quiz.quizImage}
+    />
+
+    <div hidden>
+      <span data-quiz={quizData}></span>
+    </div>
+
+    <p
+      id="quiz-question"
+      class="text-2xl text-pretty min-h-28 flex items-center text-center justify-center"
+    >
+      {quiz.questions[0].question}
+    </p>
+
+    <ul id="quiz-options" class="flex flex-col gap-3 items-center text-center has-[.answerSuccess,.answerError]:pointer-events-none">
+      {quiz.questions[0].options.map((op, i) => <Option index={i} option={op} />)}
+    </ul>
+  </main>
+</Layout>
+
+<script src="@scripts/quiz.js"></script>
