@@ -1,0 +1,26 @@
+---
+interface Props {
+  option: string
+  index: number
+}
+
+const { option, index } = Astro.props
+---
+
+<li
+  data-i={index}
+  class="w-[min(400px,100%)] border px-5 py-3 hover:scale-105 cursor-default duration-200 hover:bg-light-blue hover:text-black rounded-lg hover:font-bold text-pretty"
+>
+  {option}
+</li>
+
+
+<style>
+  .answerSuccess {
+    @apply text-black bg-green-400 font-bold animate-jump;
+  }
+
+  .answerError {
+    @apply text-black bg-red-400 font-bold animate-jump;
+  }
+</style>
