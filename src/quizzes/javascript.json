@@ -6,7 +6,7 @@
   "questions": [
     {
       "question": "¿JavaScript es un lenguaje de alto nivel e interpretado?",
-      "correctOption": "Sí",
+      "correctOption": 0,
       "options": [
         "Sí",
         "No",
@@ -16,7 +16,7 @@
     },
     {
       "question": "¿Cuál es la principal función de JavaScript en desarrollo web?",
-      "correctOption": "Agregar interactividad",
+      "correctOption": 0,
       "options": [
         "Agregar interactividad",
         "Estilos y diseños atractivos",
@@ -26,7 +26,7 @@
     },
     {
       "question": "¿Cuál es la forma correcta de incluir un archivo JavaScript en HTML?",
-      "correctOption": "&lt;script src=\"archivo.js\"&gt;&lt;/script&gt;",
+      "correctOption": 0,
       "options": [
         "&lt;script src=\"archivo.js\"&gt;&lt;/script&gt;",
         "&lt;script&gt;codigo.js&lt;/script&gt;",
@@ -36,7 +36,7 @@
     },
     {
       "question": "¿Qué palabra clave se utiliza para declarar una variable en JavaScript?",
-      "correctOption": "let",
+      "correctOption": 1,
       "options": [
         "var",
         "let",
@@ -46,7 +46,7 @@
     },
     {
       "question": "¿Qué tipo de dato representa el valor 'true' en JavaScript?",
-      "correctOption": "Boolean",
+      "correctOption": 0,
       "options": [
         "Boolean",
         "String",
@@ -56,7 +56,7 @@
     },
     {
       "question": "¿Qué hace el método console.log() en JavaScript?",
-      "correctOption": "Muestra mensajes en la consola",
+      "correctOption": 0,
       "options": [
         "Muestra mensajes en la consola",
         "Ventana emergente",
@@ -66,7 +66,7 @@
     },
     {
       "question": "¿Cuál es el resultado de '5' + 3 en JavaScript?",
-      "correctOption": "'53'",
+      "correctOption": 0,
       "options": [
         "'53'",
         "8",
@@ -76,7 +76,7 @@
     },
     {
       "question": "¿Qué operador se utiliza para concatenar cadenas en JavaScript?",
-      "correctOption": "+",
+      "correctOption": 0,
       "options": [
         "+",
         "&",
@@ -86,7 +86,7 @@
     },
     {
       "question": "¿Cómo se declara una función en JavaScript?",
-      "correctOption": "function",
+      "correctOption": 0,
       "options": [
         "function",
         "func",
@@ -96,7 +96,7 @@
     },
     {
       "question": "¿Cuál es el resultado de 10 == '10' en JavaScript?",
-      "correctOption": "true",
+      "correctOption": 0,
       "options": [
         "true",
         "false",
@@ -106,7 +106,7 @@
     },
     {
       "question": "¿Qué tipo de lenguaje es JavaScript?",
-      "correctOption": "Alto nivel e interpretado",
+      "correctOption": 2,
       "options": [
         "Compilado",
         "Bajo nivel",
@@ -116,7 +116,7 @@
     },
     {
       "question": "¿Cuál es la unidad de medida relativa en CSS?",
-      "correctOption": "em",
+      "correctOption": 1,
       "options": [
         "px",
         "em",
@@ -126,7 +126,7 @@
     },
     {
       "question": "¿Cómo se incluye una hoja de estilos CSS en HTML?",
-      "correctOption": "&lt;link rel=\"stylesheet\" href=\"estilos.css\"&gt;",
+      "correctOption": 1,
       "options": [
         "&lt;style&gt;&lt;/style&gt;",
         "&lt;link rel=\"stylesheet\" href=\"estilos.css\"&gt;",
@@ -136,7 +136,7 @@
     },
     {
       "question": "¿Cómo se comenta una línea en JavaScript?",
-      "correctOption": "// comentario",
+      "correctOption": 0,
       "options": [
         "// comentario",
         "/* comentario */",
@@ -146,7 +146,7 @@
     },
     {
       "question": "¿Cuál es el resultado de 10 / 3 en JavaScript?",
-      "correctOption": "3.3333333333333335",
+      "correctOption": 2,
       "options": [
         "3.3333",
         "3.33",
@@ -156,7 +156,7 @@
     },
     {
       "question": "¿Qué hace el método parseInt() en JavaScript?",
-      "correctOption": "Convierte una cadena en un número entero",
+      "correctOption": 0,
       "options": [
         "Convierte una cadena en un número entero",
         "Convierte un número en una cadena",
@@ -166,7 +166,7 @@
     },
     {
       "question": "¿Cuál es el resultado de 'JavaScript'.length?",
-      "correctOption": "10",
+      "correctOption": 2,
       "options": [
         "9",
         "11",
@@ -176,7 +176,7 @@
     },
     {
       "question": "¿Qué operador se utiliza para asignar valores en JavaScript?",
-      "correctOption": "=",
+      "correctOption": 0,
       "options": [
         "=",
         "==",
@@ -186,7 +186,7 @@
     },
     {
       "question": "¿Qué método se utiliza para agregar un elemento al final de un array en JavaScript?",
-      "correctOption": "push()",
+      "correctOption": 3,
       "options": [
         "add()",
         "insert()",
@@ -196,7 +196,7 @@
     },
     {
       "question": "¿Cuál es el resultado de 5 + '5' en JavaScript?",
-      "correctOption": "'55'",
+      "correctOption": 1,
       "options": [
         "55",
         "'55'",

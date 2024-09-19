@@ -6,7 +6,7 @@
   "questions": [
     {
       "question": "¿Qué significa CSS?",
-      "correctOption": "Cascading Style Sheets",
+      "correctOption": 0,
       "options": [
         "Cascading Style Sheets",
         "Computer Style Sheets",
@@ -16,7 +16,7 @@
     },
     {
       "question": "¿Cuál es la propiedad CSS para cambiar el color de fondo?",
-      "correctOption": "background-color",
+      "correctOption": 1,
       "options": [
         "color",
         "background-color",
@@ -26,7 +26,7 @@
     },
     {
       "question": "¿Cómo se selecciona un elemento por su ID en CSS?",
-      "correctOption": "#id",
+      "correctOption": 0,
       "options": [
         "#id",
         ".class",
@@ -36,7 +36,7 @@
     },
     {
       "question": "¿Cuál es la sintaxis CSS para comentar una sola línea?",
-      "correctOption": "/* comentario */",
+      "correctOption": 0,
       "options": [
         "/* comentario */",
         "// comentario",
@@ -46,7 +46,7 @@
     },
     {
       "question": "¿Qué propiedad CSS se utiliza para el espaciado entre las letras?",
-      "correctOption": "letter-spacing",
+      "correctOption": 3,
       "options": [
         "line-height",
         "spacing",
@@ -56,7 +56,7 @@
     },
     {
       "question": "¿Cuál es la unidad de medida más común en CSS?",
-      "correctOption": "px (píxeles)",
+      "correctOption": 1,
       "options": [
         "em",
         "px (píxeles)",
@@ -66,7 +66,7 @@
     },
     {
       "question": "¿Cuál es la regla CSS para ocultar un elemento sin eliminarlo del diseño?",
-      "correctOption": "display: none;",
+      "correctOption": 0,
       "options": [
         "visibility: hidden;",
         "display: none;",
@@ -76,7 +76,7 @@
     },
     {
       "question": "¿Qué propiedad se utiliza para especificar el estilo de un borde en CSS?",
-      "correctOption": "border-style",
+      "correctOption": 0,
       "options": [
         "border-style",
         "border",
@@ -86,7 +86,7 @@
     },
     {
       "question": "¿Cómo se seleccionan todos los elementos en CSS?",
-      "correctOption": "*",
+      "correctOption": 2,
       "options": [
         ".all",
         "#all",
@@ -96,7 +96,7 @@
     },
     {
       "question": "¿Cuál es la propiedad CSS que aplica sombras a los elementos?",
-      "correctOption": "box-shadow",
+      "correctOption": 2,
       "options": [
         "shadow",
         "text-shadow",
@@ -106,7 +106,7 @@
     },
     {
       "question": "¿Qué propiedad se utiliza para especificar el tamaño de la letra en CSS?",
-      "correctOption": "font-size",
+      "correctOption": 2,
       "options": [
         "text-size",
         "font-style",
@@ -116,7 +116,7 @@
     },
     {
       "question": "¿Cuál de estas unidades en CSS es relativa al tamaño de la fuente del elemento padre?",
-      "correctOption": "em",
+      "correctOption": 1,
       "options": [
         "px",
         "em",
@@ -126,7 +126,7 @@
     },
     {
       "question": "¿Qué propiedad se utiliza para centrar un elemento horizontalmente en CSS?",
-      "correctOption": "margin: 0 auto;",
+      "correctOption": 2,
       "options": [
         "text-align: center;",
         "margin: auto;",
@@ -136,7 +136,7 @@
     },
     {
       "question": "¿Cómo se especifica el color del texto en CSS?",
-      "correctOption": "color",
+      "correctOption": 1,
       "options": [
         "text-color",
         "color",
@@ -146,7 +146,7 @@
     },
     {
       "question": "¿Qué valor oculta un elemento de la pantalla pero lo mantiene accesible para los lectores de pantalla?",
-      "correctOption": "visibility: hidden;",
+      "correctOption": 1,
       "options": [
         "opacity: 0;",
         "visibility: hidden;",
