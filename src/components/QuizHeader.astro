@@ -1,0 +1,32 @@
+---
+interface Props {
+  title: string
+  numQuestions: number
+  image: string
+}
+
+const { title, numQuestions, image } = Astro.props
+---
+
+<header class="flex items-center text-xl justify-between">
+  <div class="flex items-center gap-3">
+    <a
+      href="/"
+      class="hover:scale-125 transition-transform hover:text-light-blue px-2"
+    >
+      <i class="fa-solid fa-chevron-left text-3xl"></i>
+    </a>
+    <img src={image} class="w-8" alt=`"Logo de tecnología"` />
+    <h1>{title}</h1>
+  </div>
+
+  <p>
+    <span id="quiz-counter">1</span>/{numQuestions}
+  </p>
+</header>
+
+<style>
+  * {
+    /* outline: 1px solid red; */
+  }
+</style>
