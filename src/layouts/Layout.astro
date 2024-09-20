@@ -1,6 +1,5 @@
 ---
 import '@fortawesome/fontawesome-free/css/all.min.css'
-import '@styles/_global.css'
 import { ViewTransitions } from 'astro:transitions'
 
 interface Props {
@@ -25,3 +24,19 @@ const { title } = Astro.props
     <slot />
   </body>
 </html>
+
+<style is:global>
+  @font-face {
+    font-family: 'Menlo';
+    src: url('/fonts/Menlo-Regular.woff') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'JetBrainsMono';
+    src: url('/fonts/JetBrainsMono-ExtraBold.woff2') format('truetype');
+  }
+
+  body {
+    @apply font-menlo;
+  }
+</style>
