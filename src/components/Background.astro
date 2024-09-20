@@ -7,7 +7,7 @@ const { animation } = Astro.props
 const animationClass = animation ? 'animate-bg' : ''
 ---
 
-<div class="fixed -z-10 inset-0 bg-dark-navy overflow-hidden">
+<div class="fixed -z-10 inset-0 bg-midnight-blue overflow-hidden">
   <div class={animationClass}>
     <span></span>
     <span></span>
@@ -36,8 +36,8 @@ const animationClass = animation ? 'animate-bg' : ''
     &::after {
       background: radial-gradient(
           ellipse 100% 90% at center bottom,
-          theme('colors.dark-navy/.5'),
-          theme('colors.dark-navy')
+          theme('colors.midnight-blue/.5'),
+          theme('colors.midnight-blue')
         )
         100% 100%;
     }
@@ -47,17 +47,17 @@ const animationClass = animation ? 'animate-bg' : ''
       position: absolute;
       width: 500px;
       height: 500px;
-      filter: blur(150px);
+      filter: blur(175px);
     }
 
     span:nth-child(1) {
-      background-color: theme('colors.bright-pink/.4');
+      background-color: theme('colors.vivid-pink/.4');
       left: -10%;
-      bottom: -60%;
+      top: -60%;
     }
 
     span:nth-child(2) {
-      background-color: theme('colors.light-blue/.4');
+      background-color: theme('colors.sky-blue/.4');
       right: -10%;
       bottom: -60%;
     }
@@ -69,14 +69,6 @@ const animationClass = animation ? 'animate-bg' : ''
     }
     100% {
       opacity: 1;
-    }
-  }
-
-  @media screen and (width < 600px) {
-    div div {
-      span {
-        display: none;
-      }
     }
   }
 </style>
