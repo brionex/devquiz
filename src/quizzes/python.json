@@ -1,207 +1,207 @@
 {
-  "id": "6d3186697b9c4a2cb6208f36f",
+  "url": "python",
   "quizTitle": "Quiz de Python",
   "quizImage": "/python.svg",
-  "difficulty": "medium",
+  "color": "#306998",
   "questions": [
     {
-      "question": "¿Cuál es el resultado de 2 + 2 en Python?",
+      "question": "La forma correcta de definir una función en Python es:",
       "correctOption": 0,
       "options": [
-        "4",
-        "22",
-        "5",
-        "10"
+        "def nombre_funcion():",
+        "function nombre_funcion()",
+        "create nombre_funcion()",
+        "function: nombre_funcion()"
       ]
     },
     {
-      "question": "¿Cómo imprimir 'Hola mundo' en Python?",
+      "question": "Para convertir una cadena en un número entero, se usa:",
       "correctOption": 0,
       "options": [
-        "print('Hola mundo')",
-        "echo 'Hola mundo'",
-        "println('Hola mundo')",
-        "printf('Hola mundo')"
+        "int()",
+        "str()",
+        "float()",
+        "num()"
       ]
     },
     {
-      "question": "¿Qué tipo de dato representa 'True' en Python?",
+      "question": "¿Cómo se inicia un bloque de código en Python?",
       "correctOption": 1,
       "options": [
-        "String",
-        "Boolean",
-        "Integer",
-        "Float"
+        "Con llaves {}",
+        "Con dos puntos :",
+        "Con paréntesis ()",
+        "Con comillas ''"
       ]
     },
     {
-      "question": "¿Cuál es el operador para elevar a potencia en Python?",
+      "question": "Para crear un diccionario en Python, se usa:",
       "correctOption": 0,
       "options": [
-        "**",
-        "^",
-        "^^",
-        "*^"
-      ]
-    },
-    {
-      "question": "¿Cuál de los siguientes lenguajes es interpretado?",
-      "correctOption": 2,
-      "options": [
-        "C",
-        "Java",
-        "Python",
-        "C++"
-      ]
-    },
-    {
-      "question": "¿Qué devuelve la función len() en Python?",
-      "correctOption": 0,
-      "options": [
-        "Longitud",
-        "Lista",
-        "Iterador",
-        "Tipo de dato"
-      ]
-    },
-    {
-      "question": "¿Cómo se declara un texto en Python?",
-      "correctOption": 0,
-      "options": [
-        "Str",
-        "String",
-        "Txt",
-        "Text"
-      ]
-    },
-    {
-      "question": "¿Cómo se declara una lista vacía en Python?",
-      "correctOption": 2,
-      "options": [
-        "list()",
         "{}",
         "[]",
-        "list[]"
+        "()",
+        "<>"
       ]
     },
     {
-      "question": "¿Cuál es el operador de pertenencia en Python?",
+      "question": "El resultado de 10 // 3 es:",
       "correctOption": 0,
       "options": [
-        "in",
-        "of",
-        "is",
-        "at"
-      ]
-    },
-    {
-      "question": "¿Qué método se utiliza para agregar un elemento a una lista en Python?",
-      "correctOption": 0,
-      "options": [
-        "append()",
-        "push()",
-        "add()",
-        "insert()"
-      ]
-    },
-    {
-      "question": "¿Cómo se representa un comentario en Python?",
-      "correctOption": 2,
-      "options": [
-        "//",
-        "/* */",
-        "#",
-        "--"
-      ]
-    },
-    {
-      "question": "¿Cuál es el valor booleano de True en Python?",
-      "correctOption": 2,
-      "options": [
-        "1",
-        "0",
-        "True",
-        "False"
-      ]
-    },
-    {
-      "question": "¿Cuál es el resultado de 'hola' + 'mundo' en Python?",
-      "correctOption": 0,
-      "options": [
-        "holamundo",
-        "'hola' + 'mundo'",
-        "hola mundo",
+        "3",
+        "3.333",
+        "4",
         "Error"
       ]
     },
     {
-      "question": "¿Cuál es el operador para la división entera en Python?",
+      "question": "Para acceder al primer elemento de una lista llamada 'lista', se usa:",
       "correctOption": 1,
       "options": [
-        "/",
-        "//",
-        "%",
-        "div"
+        "lista[0]",
+        "lista[1]",
+        "lista.first()",
+        "lista[1st]"
       ]
     },
     {
-      "question": "¿Qué tipo de dato se utiliza para números enteros en Python?",
+      "question": "Para obtener el último elemento de una lista, se puede usar:",
       "correctOption": 0,
       "options": [
-        "Int",
-        "Integer",
-        "Number",
-        "Num"
+        "lista[-1]",
+        "lista.last()",
+        "lista[len(lista)]",
+        "lista[len(lista)-1]"
       ]
     },
     {
-      "question": "¿Cómo se verifica si dos objetos son iguales en Python?",
-      "correctOption": 0,
+      "question": "El operador que permite verificar la igualdad de tipo y valor es:",
+      "correctOption": 2,
       "options": [
         "==",
         "===",
-        "=",
+        "is",
         "equals()"
       ]
     },
     {
-      "question": "¿Cuál es el operador de asignación en Python?",
-      "correctOption": 0,
+      "question": "¿Cuál de los siguientes métodos convierte una lista en una cadena?",
+      "correctOption": 1,
       "options": [
-        "=",
-        "==",
-        ":=",
-        "->"
+        "join()",
+        "str()",
+        "convert()",
+        "combine()"
       ]
     },
     {
-      "question": "¿Qué método se utiliza para eliminar el último elemento de una lista en Python?",
+      "question": "La palabra clave para importar módulos en Python es:",
       "correctOption": 0,
       "options": [
-        "pop()",
-        "delete()",
+        "import",
+        "include",
+        "require",
+        "load"
+      ]
+    },
+    {
+      "question": "Para capturar excepciones, se utiliza:",
+      "correctOption": 0,
+      "options": [
+        "try/except",
+        "catch/throw",
+        "exception/catch",
+        "handle/except"
+      ]
+    },
+    {
+      "question": "Para recorrer una lista con índices, se usa:",
+      "correctOption": 1,
+      "options": [
+        "for item in lista:",
+        "for i in range(len(lista)):",
+        "for each item in lista:",
+        "foreach item in lista:"
+      ]
+    },
+    {
+      "question": "El operador 'in' se utiliza para verificar:",
+      "correctOption": 0,
+      "options": [
+        "Si un elemento está en una colección",
+        "La igualdad de dos objetos",
+        "El tipo de un objeto",
+        "La longitud de una cadena"
+      ]
+    },
+    {
+      "question": "Para crear una lista que contenga un rango de números, se puede usar:",
+      "correctOption": 1,
+      "options": [
+        "list(range(5))",
+        "range(5).toList()",
+        "array(5)",
+        "makeList(5)"
+      ]
+    },
+    {
+      "question": "Para eliminar un elemento específico de una lista, se usa:",
+      "correctOption": 0,
+      "options": [
         "remove()",
-        "last()"
+        "delete()",
+        "discard()",
+        "pop()"
       ]
     },
     {
-      "question": "¿Cómo se declara una tupla vacía en Python?",
+      "question": "Para verificar el tipo de un objeto, se utiliza:",
       "correctOption": 2,
       "options": [
-        "{}",
-        "tupla()",
-        "()",
-        "tuple{}"
+        "typeOf()",
+        "instanceof",
+        "type()",
+        "class()"
       ]
     },
     {
-      "question": "¿Qué devuelve la función range(5) en Python?",
+      "question": "La función zip() se utiliza para:",
+      "correctOption": 1,
+      "options": [
+        "Agrupar elementos de varias listas",
+        "Contar elementos de una lista",
+        "Ordenar una lista",
+        "Dividir una lista"
+      ]
+    },
+    {
+      "question": "¿Qué devuelve la función list() si se le pasa un objeto iterable?",
       "correctOption": 3,
       "options": [
-        "Lista de 0 a 5",
-        "Lista de 1 a 5",
-        "Lista de 1 a 4",
-        "Lista de 0 a 4"
+        "Una tupla",
+        "Un conjunto",
+        "Un diccionario",
+        "Una lista"
+      ]
+    },
+    {
+      "question": "Para definir una clase en Python, se usa:",
+      "correctOption": 0,
+      "options": [
+        "class Nombre:",
+        "define Nombre:",
+        "new Nombre:",
+        "create class Nombre:"
+      ]
+    },
+    {
+      "question": "La función map() se utiliza para:",
+      "correctOption": 2,
+      "options": [
+        "Transformar listas en conjuntos",
+        "Aplicar una función a cada elemento de un iterable",
+        "Contar elementos en una lista",
+        "Filtrar elementos de una lista"
       ]
     }
   ]

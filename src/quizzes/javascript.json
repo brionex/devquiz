@@ -1,191 +1,151 @@
 {
-  "id": "d658a72651fc897576873cf2c",
+  "url": "javascript",
   "quizTitle": "Quiz de JavaScript",
   "quizImage": "/javascript.svg",
-  "difficulty": "medium",
+  "color": "#f7df1e",
   "questions": [
     {
-      "question": "¿JavaScript es un lenguaje de alto nivel e interpretado?",
+      "question": "JavaScript es fundamental para la interactividad en la web. ¿Es cierto?",
       "correctOption": 0,
       "options": [
-        "Sí",
-        "No",
-        "A veces",
-        "Depende"
+        "Cierto",
+        "Falso",
+        "Solo en servidores",
+        "No es necesario"
       ]
     },
     {
-      "question": "¿Cuál es la principal función de JavaScript en desarrollo web?",
-      "correctOption": 0,
+      "question": "Para incluir un archivo JavaScript en HTML, se usa:",
+      "correctOption": 1,
       "options": [
-        "Agregar interactividad",
-        "Estilos y diseños atractivos",
-        "Consultas a bases de datos",
-        "Definir estructura y contenido"
-      ]
-    },
-    {
-      "question": "¿Cuál es la forma correcta de incluir un archivo JavaScript en HTML?",
-      "correctOption": 0,
-      "options": [
-        "&lt;script src=\"archivo.js\"&gt;&lt;/script&gt;",
         "&lt;script&gt;codigo.js&lt;/script&gt;",
+        "&lt;script src=\"archivo.js\"&gt;&lt;/script&gt;",
         "&lt;javascript src=\"archivo.js\"&gt;&lt;/js&gt;",
         "&lt;script href=\"archivo.js\"&gt;&lt;/script&gt;"
       ]
     },
     {
-      "question": "¿Qué palabra clave se utiliza para declarar una variable en JavaScript?",
-      "correctOption": 1,
+      "question": "¿Cuál es la palabra clave para declarar una variable que no cambiará?",
+      "correctOption": 2,
       "options": [
         "var",
         "let",
         "const",
-        "variable"
+        "static"
       ]
     },
     {
-      "question": "¿Qué tipo de dato representa el valor 'true' en JavaScript?",
+      "question": "La propiedad 'length' de un string devuelve:",
       "correctOption": 0,
       "options": [
-        "Boolean",
-        "String",
-        "Number",
-        "Object"
+        "La cantidad de caracteres",
+        "El índice de la última letra",
+        "La posición del primer carácter",
+        "Un error si está vacío"
       ]
     },
     {
-      "question": "¿Qué hace el método console.log() en JavaScript?",
-      "correctOption": 0,
-      "options": [
-        "Muestra mensajes en la consola",
-        "Ventana emergente",
-        "Registro de errores",
-        "No hace nada"
-      ]
-    },
-    {
-      "question": "¿Cuál es el resultado de '5' + 3 en JavaScript?",
-      "correctOption": 0,
-      "options": [
-        "'53'",
-        "8",
-        "'8'",
-        "Error"
-      ]
-    },
-    {
-      "question": "¿Qué operador se utiliza para concatenar cadenas en JavaScript?",
-      "correctOption": 0,
-      "options": [
-        "+",
-        "&",
-        "*",
-        "-"
-      ]
-    },
-    {
-      "question": "¿Cómo se declara una función en JavaScript?",
-      "correctOption": 0,
-      "options": [
-        "function",
-        "func",
-        "method",
-        "def"
-      ]
-    },
-    {
-      "question": "¿Cuál es el resultado de 10 == '10' en JavaScript?",
+      "question": "¿Qué valor retorna '0 == false' en JavaScript?",
       "correctOption": 0,
       "options": [
         "true",
         "false",
         "Error",
+        "undefined"
+      ]
+    },
+    {
+      "question": "El método que permite mostrar información en la consola es:",
+      "correctOption": 1,
+      "options": [
+        "alert()",
+        "console.log()",
+        "print()",
+        "display()"
+      ]
+    },
+    {
+      "question": "Para concatenar dos cadenas se utiliza:",
+      "correctOption": 0,
+      "options": [
+        "+",
+        "-",
+        "*",
+        "&"
+      ]
+    },
+    {
+      "question": "¿Cuál es el resultado de 3 * '3' en JavaScript?",
+      "correctOption": 1,
+      "options": [
+        "9",
+        "33",
+        "Error",
         "NaN"
       ]
     },
     {
-      "question": "¿Qué tipo de lenguaje es JavaScript?",
+      "question": "¿Qué hace el operador 'typeof'?",
       "correctOption": 2,
       "options": [
-        "Compilado",
-        "Bajo nivel",
-        "Alto nivel e interpretado",
-        "Marcado"
+        "Cambia el tipo de una variable",
+        "Devuelve el tipo de una variable",
+        "Compara dos tipos",
+        "No tiene uso"
       ]
     },
     {
-      "question": "¿Cuál es la unidad de medida relativa en CSS?",
-      "correctOption": 1,
-      "options": [
-        "px",
-        "em",
-        "rem",
-        "%"
-      ]
-    },
-    {
-      "question": "¿Cómo se incluye una hoja de estilos CSS en HTML?",
-      "correctOption": 1,
-      "options": [
-        "&lt;style&gt;&lt;/style&gt;",
-        "&lt;link rel=\"stylesheet\" href=\"estilos.css\"&gt;",
-        "&lt;css&gt;&lt;/css&gt;",
-        "&lt;stylesheet&gt;&lt;/stylesheet&gt;"
-      ]
-    },
-    {
-      "question": "¿Cómo se comenta una línea en JavaScript?",
+      "question": "¿Cómo se declara una función anónima en JavaScript?",
       "correctOption": 0,
       "options": [
-        "// comentario",
-        "/* comentario */",
-        "&lt;!-- comentario -->",
-        "-- comentario --"
+        "const myFunc = function() {}",
+        "function myFunc() {}",
+        "let myFunc() => {}",
+        "function: myFunc() {}"
       ]
     },
     {
-      "question": "¿Cuál es el resultado de 10 / 3 en JavaScript?",
-      "correctOption": 2,
+      "question": "La diferencia entre '==' y '===' es:",
+      "correctOption": 1,
       "options": [
-        "3.3333",
-        "3.33",
-        "3.3333333333333335",
-        "3"
+        "No hay diferencia",
+        "El primero compara sin tipo",
+        "El primero es más estricto",
+        "El segundo no existe"
       ]
     },
     {
-      "question": "¿Qué hace el método parseInt() en JavaScript?",
+      "question": "¿Qué resultado retorna '5 + '5''?",
       "correctOption": 0,
       "options": [
-        "Convierte una cadena en un número entero",
-        "Convierte un número en una cadena",
-        "Devuelve el valor absoluto de un número",
-        "No hace nada"
-      ]
-    },
-    {
-      "question": "¿Cuál es el resultado de 'JavaScript'.length?",
-      "correctOption": 2,
-      "options": [
-        "9",
-        "11",
+        "'55'",
         "10",
-        "Error"
+        "Error",
+        "NaN"
       ]
     },
     {
-      "question": "¿Qué operador se utiliza para asignar valores en JavaScript?",
-      "correctOption": 0,
+      "question": "Para convertir un string a número entero se usa:",
+      "correctOption": 2,
       "options": [
-        "=",
-        "==",
-        "===",
-        ":="
+        "Number()",
+        "parseFloat()",
+        "parseInt()",
+        "int()"
       ]
     },
     {
-      "question": "¿Qué método se utiliza para agregar un elemento al final de un array en JavaScript?",
+      "question": "¿Cómo se crea un array vacío en JavaScript?",
+      "correctOption": 1,
+      "options": [
+        "let arr = []",
+        "let arr = ()",
+        "let arr = {}",
+        "let arr = new Array()"
+      ]
+    },
+    {
+      "question": "Para agregar un elemento al final de un array, se utiliza:",
       "correctOption": 3,
       "options": [
         "add()",
@@ -195,13 +155,53 @@
       ]
     },
     {
-      "question": "¿Cuál es el resultado de 5 + '5' en JavaScript?",
+      "question": "¿Qué hace el método 'map()' en un array?",
+      "correctOption": 0,
+      "options": [
+        "Transforma cada elemento",
+        "Filtra elementos",
+        "Devuelve un valor único",
+        "Ordena el array"
+      ]
+    },
+    {
+      "question": "Para detectar errores en JavaScript se utiliza:",
       "correctOption": 1,
       "options": [
-        "55",
-        "'55'",
-        "Error",
-        "10"
+        "debugger;",
+        "try...catch",
+        "logError()",
+        "error()"
+      ]
+    },
+    {
+      "question": "¿Qué método permite convertir un array en string?",
+      "correctOption": 2,
+      "options": [
+        "join()",
+        "slice()",
+        "toString()",
+        "concat()"
+      ]
+    },
+    {
+      "question": "El operador '&&' se usa para:",
+      "correctOption": 1,
+      "options": [
+        "Comparar",
+        "Operar lógicamente",
+        "Asignar valores",
+        "Sumar"
+      ]
+    },
+    {
+      "question": "¿Cómo se define una clase en JavaScript ES6?",
+      "correctOption": 0,
+      "options": [
+        "class MyClass {}",
+        "function MyClass() {}",
+        "MyClass: {}",
+        "define class MyClass {}"
       ]
     }
   ]

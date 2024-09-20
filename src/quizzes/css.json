@@ -1,157 +1,197 @@
 {
-  "id": "077a76adf7aad96866c0b8916",
+  "url": "css",
   "quizTitle": "Quiz de CSS",
   "quizImage": "/css.svg",
-  "difficulty": "low",
+  "color": "#264de4",
   "questions": [
     {
-      "question": "¿Qué significa CSS?",
+      "question": "CSS se utiliza para dar estilo a los documentos HTML. ¿Qué significa CSS?",
       "correctOption": 0,
       "options": [
         "Cascading Style Sheets",
-        "Computer Style Sheets",
-        "Creative Style Sheets",
-        "Cascaded Style Sheets"
+        "Creative Style System",
+        "Cascaded Style Solutions",
+        "Computer Style Sheets"
       ]
     },
     {
-      "question": "¿Cuál es la propiedad CSS para cambiar el color de fondo?",
+      "question": "Para cambiar el color del texto de un elemento, se utiliza la propiedad:",
       "correctOption": 1,
       "options": [
+        "background",
         "color",
-        "background-color",
-        "bgcolor",
-        "background"
+        "text-color",
+        "font-color"
       ]
     },
     {
-      "question": "¿Cómo se selecciona un elemento por su ID en CSS?",
-      "correctOption": 0,
+      "question": "La propiedad que define el espacio entre un elemento y sus bordes es:",
+      "correctOption": 2,
       "options": [
-        "#id",
-        ".class",
-        "element",
-        "id"
+        "margin",
+        "border",
+        "padding",
+        "spacing"
       ]
     },
     {
-      "question": "¿Cuál es la sintaxis CSS para comentar una sola línea?",
-      "correctOption": 0,
-      "options": [
-        "/* comentario */",
-        "// comentario",
-        "&lt;!-- comentario -->",
-        "//- comentario -//"
-      ]
-    },
-    {
-      "question": "¿Qué propiedad CSS se utiliza para el espaciado entre las letras?",
-      "correctOption": 3,
-      "options": [
-        "line-height",
-        "spacing",
-        "word-spacing",
-        "letter-spacing"
-      ]
-    },
-    {
-      "question": "¿Cuál es la unidad de medida más común en CSS?",
+      "question": "Para aplicar un fondo sólido a un elemento, se usa:",
       "correctOption": 1,
       "options": [
-        "em",
-        "px (píxeles)",
-        "%",
-        "pt (puntos)"
+        "bgcolor",
+        "background-color",
+        "color-background",
+        "element-background"
       ]
     },
     {
-      "question": "¿Cuál es la regla CSS para ocultar un elemento sin eliminarlo del diseño?",
+      "question": "La unidad 'px' en CSS se refiere a:",
       "correctOption": 0,
       "options": [
-        "visibility: hidden;",
-        "display: none;",
-        "opacity: 0;",
-        "position: absolute; left: -9999px;"
+        "píxeles",
+        "porcentaje",
+        "em",
+        "rem"
       ]
     },
     {
-      "question": "¿Qué propiedad se utiliza para especificar el estilo de un borde en CSS?",
-      "correctOption": 0,
+      "question": "¿Qué propiedad se utiliza para definir el estilo de un borde?",
+      "correctOption": 1,
       "options": [
         "border-style",
         "border",
-        "border-type",
-        "border-visibility"
+        "border-width",
+        "border-color"
       ]
     },
     {
-      "question": "¿Cómo se seleccionan todos los elementos en CSS?",
+      "question": "La propiedad 'display' puede tener varios valores. ¿Cuál de los siguientes oculta un elemento?",
       "correctOption": 2,
       "options": [
-        ".all",
-        "#all",
-        "*",
-        "element"
+        "display: inline;",
+        "display: block;",
+        "display: none;",
+        "display: flex;"
       ]
     },
     {
-      "question": "¿Cuál es la propiedad CSS que aplica sombras a los elementos?",
-      "correctOption": 2,
-      "options": [
-        "shadow",
-        "text-shadow",
-        "box-shadow",
-        "element-shadow"
-      ]
-    },
-    {
-      "question": "¿Qué propiedad se utiliza para especificar el tamaño de la letra en CSS?",
-      "correctOption": 2,
-      "options": [
-        "text-size",
-        "font-style",
-        "font-size",
-        "size"
-      ]
-    },
-    {
-      "question": "¿Cuál de estas unidades en CSS es relativa al tamaño de la fuente del elemento padre?",
+      "question": "Para centrar un bloque de texto horizontalmente, debes usar:",
       "correctOption": 1,
-      "options": [
-        "px",
-        "em",
-        "rem",
-        "%"
-      ]
-    },
-    {
-      "question": "¿Qué propiedad se utiliza para centrar un elemento horizontalmente en CSS?",
-      "correctOption": 2,
       "options": [
         "text-align: center;",
         "margin: auto;",
-        "margin: 0 auto;",
-        "justify-content: center;"
+        "align: center;",
+        "center: block;"
       ]
     },
     {
-      "question": "¿Cómo se especifica el color del texto en CSS?",
-      "correctOption": 1,
+      "question": "La propiedad 'flexbox' se usa para crear diseños flexibles. ¿Es esto cierto?",
+      "correctOption": 0,
       "options": [
-        "text-color",
-        "color",
-        "font-color",
-        "foreground-color"
+        "Cierto",
+        "Falso",
+        "Solo en móviles",
+        "No se usa en CSS"
       ]
     },
     {
-      "question": "¿Qué valor oculta un elemento de la pantalla pero lo mantiene accesible para los lectores de pantalla?",
+      "question": "¿Qué hace la propiedad 'position: relative;'?",
       "correctOption": 1,
       "options": [
-        "opacity: 0;",
-        "visibility: hidden;",
-        "display: none;",
-        "position: absolute; left: -9999px;"
+        "Posiciona el elemento de manera absoluta",
+        "Permite mover el elemento respecto a su posición original",
+        "Elimina el elemento del flujo del documento",
+        "No tiene efecto visible"
+      ]
+    },
+    {
+      "question": "La propiedad 'overflow' controla qué ocurre con el contenido que se desborda. ¿Verdadero o falso?",
+      "correctOption": 0,
+      "options": [
+        "Verdadero",
+        "Falso",
+        "Solo en imágenes",
+        "No tiene efecto"
+      ]
+    },
+    {
+      "question": "La propiedad 'box-shadow' se utiliza para aplicar sombras a los elementos. ¿Es cierto?",
+      "correctOption": 0,
+      "options": [
+        "Cierto",
+        "Falso",
+        "Solo en textos",
+        "No se usa en CSS"
+      ]
+    },
+    {
+      "question": "Para aplicar transformaciones en CSS, se usa la propiedad:",
+      "correctOption": 1,
+      "options": [
+        "transition",
+        "transform",
+        "animation",
+        "effect"
+      ]
+    },
+    {
+      "question": "¿Qué propiedad se utiliza para definir la fuente en un texto?",
+      "correctOption": 2,
+      "options": [
+        "font-weight",
+        "font-style",
+        "font-family",
+        "text-font"
+      ]
+    },
+    {
+      "question": "Para agregar un estilo específico a pantallas pequeñas, se usa:",
+      "correctOption": 3,
+      "options": [
+        "@media print",
+        "@media all",
+        "@media screen",
+        "@media (max-width: 600px)"
+      ]
+    },
+    {
+      "question": "¿La propiedad 'z-index' afecta la superposición de los elementos en CSS?",
+      "correctOption": 0,
+      "options": [
+        "Cierto",
+        "Falso",
+        "Solo en elementos flotantes",
+        "No tiene efecto"
+      ]
+    },
+    {
+      "question": "Para crear un diseño con columnas, la propiedad 'grid' se utiliza como:",
+      "correctOption": 1,
+      "options": [
+        "grid-column",
+        "display: grid;",
+        "grid-layout",
+        "grid-template"
+      ]
+    },
+    {
+      "question": "La propiedad 'transition' se utiliza para definir animaciones suaves. ¿Verdadero o falso?",
+      "correctOption": 0,
+      "options": [
+        "Verdadero",
+        "Falso",
+        "Solo para textos",
+        "No se usa en CSS"
+      ]
+    },
+    {
+      "question": "Para aplicar un efecto de escala a un elemento, puedes usar:",
+      "correctOption": 2,
+      "options": [
+        "scale-effect",
+        "transform: scale(1.5);",
+        "zoom: 1.5;",
+        "scale: 1.5;"
       ]
     }
   ]
