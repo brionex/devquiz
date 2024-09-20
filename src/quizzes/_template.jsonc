@@ -1,13 +1,17 @@
 {
-  // El atributo "id" se genera ejecutando el script "setid.js"
+  // -->
   // Las opciones deben ser de máximo 40 caracteres
-  "id": "",
+  // La url es toda en minúsculas y sin espacios
+  // Solo puede hacer 4 opciones
+  // La respuesta correcta debe ser el índice de la opción correcta
+  // -->
+  "url": "url",
   "quizTitle": "Quiz Title",
-  "quizImage": "Image or Logo",
-  "difficulty": "low | medium | high",
+  "quizImage": "url of Image or Logo",
+  "color": "#000000",
   "questions": [
     {
-      "questionText": "Question",
+      "question": "Question of the quiz",
       "correctOption": 3,
       "options": [
         "Option 1",
