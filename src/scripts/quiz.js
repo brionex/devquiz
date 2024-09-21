@@ -1,18 +1,17 @@
-import '@scripts/glideText/glideText.css'
-import { GlideText } from '@scripts/glideText/glideText.js'
+import '@scripts/slidingText/slidingText.css'
+import { SlidingText } from '@scripts/slidingText/slidingText.js'
 
-const classNames = ['answerSuccess', 'answerError']
+const className = ['answerError', 'answerSuccess']
 let counterElem = null
 let questionElem = null
 let optionsElem = null
-let quiz = null
 let currentQuestion = 0
+let quiz = null
 
 document.addEventListener('astro:page-load', updateScript)
 
 function updateScript() {
-  const path = window.location.pathname
-  if (!path.includes('/quiz/')) {
+  if (!window.location.pathname.includes('/quiz/')) {
     currentQuestion = 0
     return
   }
@@ -21,8 +20,8 @@ function updateScript() {
   questionElem = document.querySelector('#quiz-question')
   optionsElem = document.querySelector('#quiz-options')
 
-  const data64 = document.querySelector('[data-quiz]')
-  quiz = JSON.parse(atob(data64.dataset.quiz))
+  const dataElem = document.querySelector('[data-quiz]')
+  quiz = JSON.parse(atob(dataElem.dataset.quiz))
 
   optionsElem.addEventListener('click', clickedOption)
 }
@@ -30,19 +29,17 @@ function updateScript() {
 function clickedOption({ target }) {
   if (target.tagName !== 'LI') return
 
-  const option = +target.dataset.i
-  const isCorrect = checkAnswer(option)
+  const optionIndex = +target.dataset.i
+  const questionObj = quiz.questions[currentQuestion]
+  const answerIsCorrect = optionIndex === questionObj.correctOption
 
-  isCorrect
-    ? target.classList.add(classNames[0])
-    : target.classList.add(classNames[1])
-
+  target.classList.add(className[+answerIsCorrect])
   currentQuestion++
 
   setTimeout(() => {
-    target.classList.remove(...classNames)
+    target.classList.remove(...className)
 
-    GlideText({
+    SlidingText({
       elements: [
         counterElem,
         questionElem,
@@ -60,11 +57,4 @@ function clickedOption({ target }) {
       window.location.href = '/results'
     }
   }, 1500)
-}
-
-function checkAnswer(answer) {
-  console.log(answer)
-  console.log(quiz.questions[currentQuestion].correctOption)
-
-  return answer === quiz.questions[currentQuestion].correctOption
 }
