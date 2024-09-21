@@ -1,29 +1,35 @@
-// Define los niveles de dificultad
-export type Difficulty = 'low' | 'medium' | 'high'
-
-// Define las opciones de una pregunta
+// Define los tipos para el objeto json de un quiz
 export interface Question {
   question: string
-  correctOption: string
+  correctOption: number
   options: string[]
 }
 
-// Define la estructura de un quiz
 export interface Quiz {
-  id: string
+  url: string
   quizTitle: string
   quizImage: string
-  difficulty: Difficulty
+  color: string
   questions: Question[]
 }
 
-// Define las rutas estáticas
+// Define los tipos para la función getStaticPaths
 export interface StaticPaths {
   params: { quiz: string }
-  props: { quiz: any }
+  props: { quiz: Quiz }
 }
 
-// Extiende de Quiz agregando la propiedad 'default'
-export interface QuizJson extends Quiz {
-  default: Quiz
-}
+// // Extiende de Quiz agregando la propiedad 'default'
+// export interface QuizJson extends Quiz {
+//   default: Quiz
+// }
+
+// // Props del componente StatisticsCard
+// export type ColorOptions = 'success' | 'error' | 'warning' | 'info' | 'default'
+
+// export interface StatisticsCardProps {
+//   title: string
+//   number: number | string
+//   suffix?: string
+//   color?: ColorOptions
+// }
