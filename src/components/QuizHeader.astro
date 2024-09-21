@@ -1,4 +1,6 @@
 ---
+import ArrowLeft from '@icons/ArrowLeft.astro'
+
 interface Props {
   title: string
   numQuestions: number
@@ -8,15 +10,13 @@ interface Props {
 const { title, numQuestions, image } = Astro.props
 ---
 
-<header class="flex items-center text-xl justify-between">
-  <div class="flex items-center gap-3">
-    <a
-      href="/"
-      class="hover:scale-125 transition-transform hover:text-light-blue px-2"
-    >
-      <i class="fa-solid fa-chevron-left text-3xl"></i>
-    </a>
-    <img src={image} class="w-8" alt=`"Logo de tecnología"` />
+<header class="flex items-center text-xl gap-5 text-gray-400">
+  <a href="/" class="hover:scale-125 transition-transform hover:text-sky-blue">
+    <ArrowLeft class="w-8 h-8" />
+  </a>
+
+  <div class="flex items-center gap-2 flex-grow">
+    <img src={image} class="w-8" alt="Logo de tecnología" />
     <h1>{title}</h1>
   </div>
 
@@ -24,9 +24,3 @@ const { title, numQuestions, image } = Astro.props
     <span id="quiz-counter">1</span>/{numQuestions}
   </p>
 </header>
-
-<style>
-  * {
-    /* outline: 1px solid red; */
-  }
-</style>
