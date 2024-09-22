@@ -26,11 +26,12 @@ export function SlidingText(config) {
       slidingElem.style.setProperty('--time', formatDuration(duration))
     }
 
+    const elemContent = escapeHTML(elem.textContent)
     const textHide =
-      elem.textContent.length > texts[i].length ? elem.textContent : texts[i]
+      elem.textContent.length > texts[i].length ? elemContent : texts[i]
 
     slidingElem.innerHTML = `
-      <span class="sliding-text-out">${elem.textContent}</span>
+      <span class="sliding-text-out">${elemContent}</span>
       <span class="sliding-text-in">${texts[i]}</span>
       <div class="sliding-hide">${textHide}</div>`
 
@@ -55,4 +56,13 @@ function formatDuration(value) {
     return value >= 1000 ? `${value / 1000}s` : `${value}ms`
   }
   return value
+}
+
+function escapeHTML(str) {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;')
 }
