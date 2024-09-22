@@ -6,9 +6,11 @@ interface SummaryCardProps {
   type?: Type
 }
 
-const SummaryCard = (props: SummaryCardProps) => {
-  const { title, content, type = 'default' } = props
-
+const SummaryCard = ({
+  title,
+  content,
+  type = 'default',
+}: SummaryCardProps) => {
   const statusColors = {
     success: 'text-green-400',
     error: 'text-red-400',
