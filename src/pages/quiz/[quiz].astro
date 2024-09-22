@@ -22,7 +22,7 @@ const quizData64 = btoa(JSON.stringify(quiz))
   <Background />
 
   <main
-    class="flex flex-col max-w-screen-md px-5 md:px-0 gap-10 mx-auto text-white pt-10"
+    class="flex flex-col max-w-screen-md gap-10 px-5 pt-10 mx-auto text-white md:px-0"
   >
     <QuizHeader
       title={quiz.quizTitle}
@@ -36,7 +36,7 @@ const quizData64 = btoa(JSON.stringify(quiz))
 
     <p
       id="quiz-question"
-      class="text-2xl text-pretty min-h-28 content-center text-center select-none"
+      class="content-center text-2xl text-center select-none text-pretty min-h-28"
     >
       {quiz.questions[3].question}
     </p>
