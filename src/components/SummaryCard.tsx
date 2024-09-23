@@ -2,7 +2,7 @@ type Type = 'success' | 'error' | 'warning' | 'info' | 'default'
 
 interface SummaryCardProps {
   title: string
-  content: Array<string | number>
+  content: string | number
   type?: Type
 }
 
@@ -21,14 +21,10 @@ const SummaryCard = ({
 
   return (
     <article
-      className={`${statusColors[type]} flex flex-col gap-5 border border-current items-center rounded-2xl p-5 font-semibold w-fit`}
+      className={`${statusColors[type]} flex flex-col gap-5 border border-current items-center rounded-2xl p-5 font-semibold w-fit text-lg`}
     >
       <h4>{title}</h4>
-      <p className="text-4xl flex gap-5">
-        {content.map((item, index) => (
-          <span key={index}>{item}</span>
-        ))}
-      </p>
+      <p className="flex gap-5 text-4xl text-nowrap">{content}</p>
     </article>
   )
 }
