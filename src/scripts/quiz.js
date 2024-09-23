@@ -72,7 +72,7 @@ function updateQuizSummary(
   optionIndex,
   { correctOption, question, options }
 ) {
-  isCorrect ? quizSummary.correctAnswers++ : quizSummary.incorrectAnswers++
+  isCorrect ? quizSummary.correctCount++ : quizSummary.incorrectCount++
   const duration = calcDuration(startTime, Date.now())
 
   times.push(duration)
@@ -83,8 +83,6 @@ function updateQuizSummary(
     correctOption: options[correctOption],
     timeTaken: formatDuration(duration, true),
   })
-
-  console.log(duration)
 }
 
 function nextQuestion() {
@@ -104,7 +102,7 @@ function nextQuestion() {
 
 function finalizeQuiz() {
   quizSummary.numberQuestions = quiz.questions.length
-  quizSummary.totalTime = formatDuration(sumDurations(times))
+  quizSummary.duration = formatDuration(sumDurations(times))
   localStorage.setItem('devquiz', JSON.stringify(quizSummary))
   window.location.href = '/results'
 }
