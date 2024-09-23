@@ -1,31 +1,34 @@
-function formatTime(ms) {
+function parseDuration(ms) {
   return {
-    hours: Math.floor(ms / 3600000),
-    minutes: Math.floor(ms / 60000) % 60,
-    seconds: Math.floor(ms / 1000) % 60,
-    milliseconds: ms % 1000,
+    h: Math.floor(ms / 3600000),
+    m: Math.floor((ms % 3600000) / 60000),
+    s: Math.floor((ms % 60000) / 1000),
+    ms: ms % 1000,
   }
 }
 
-export function getTimeLapse(start, end) {
-  const diffInMilliseconds = end - start
-  return formatTime(diffInMilliseconds)
+export function calcDuration(start, end) {
+  return parseDuration(end - start)
 }
 
-export function sumTimeLapses(durations) {
-  const totalMilliseconds = durations.reduce((acc, duration) => {
-    const { hours, minutes, seconds, milliseconds } = duration
-    return (
-      acc + hours * 3600000 + minutes * 60000 + seconds * 1000 + milliseconds
-    )
+export function sumDurations(durations) {
+  const totalMs = durations.reduce((acc, { h, m, s, ms }) => {
+    return acc + h * 3600000 + m * 60000 + s * 1000 + ms
   }, 0)
 
-  return {
-    hours: Math.floor(totalMilliseconds / 3600000),
-    minutes: Math.floor(totalMilliseconds / 60000) % 60,
-    seconds: Math.floor(totalMilliseconds / 1000) % 60,
-    milliseconds: totalMilliseconds % 1000,
-  }
+  return parseDuration(totalMs)
+}
+
+export function formatDuration(duration, withMs = false) {
+  const { h, m, s, ms } = duration
+  const parts = []
+
+  if (h) parts.push(`${h}h`)
+  if (m) parts.push(`${m}m`)
+  if (s) parts.push(`${s}s`)
+  if (withMs && ms) parts.push(`${ms}ms`)
+
+  return parts.length > 1 ? parts.join(' : ') : parts.join(' ')
 }
 
 // For test
@@ -52,15 +55,3 @@ export function sumTimeLapses(durations) {
 //   { start: 1695349200000, end: 1695351000333 }, // 0h 30m 0s 333ms
 //   { start: 1695352800000, end: 1695355200350 }, // 1h 20m 0s 350ms
 // ]
-
-// const times = randomTime.map(({ start, end }) => getTimeLapse(start, end))
-// console.log(times)
-
-// const timesCalc = [
-//   { hours: 1, minutes: 50, seconds: 50, milliseconds: 123 },
-//   { hours: 1, minutes: 20, seconds: 20, milliseconds: 250 },
-//   { hours: 4, minutes: 0, seconds: 30, milliseconds: 5 },
-// ]
-
-// const totalTime = sumTimeLapses(timesCalc)
-// console.log(totalTime)
