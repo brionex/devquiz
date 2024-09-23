@@ -19,17 +19,21 @@ export interface StaticPaths {
   props: { quiz: Quiz }
 }
 
-// // Extiende de Quiz agregando la propiedad 'default'
-// export interface QuizJson extends Quiz {
-//   default: Quiz
-// }
+// Define los tipos del objeto resultados de un quiz
+interface DetailAnswers {
+  isCorrect: boolean
+  question: string
+  selectedOption: string
+  correctOption: string
+  timeTaken: string
+}
 
-// // Props del componente StatisticsCard
-// export type ColorOptions = 'success' | 'error' | 'warning' | 'info' | 'default'
-
-// export interface StatisticsCardProps {
-//   title: string
-//   number: number | string
-//   suffix?: string
-//   color?: ColorOptions
-// }
+export interface QuizSummary {
+  quizTitle: string
+  quizImage: string
+  numberQuestions: number
+  correctCount: number
+  incorrectCount: number
+  duration: string
+  details: DetailAnswers[]
+}
