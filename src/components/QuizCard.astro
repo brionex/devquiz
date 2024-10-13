@@ -7,14 +7,17 @@ interface Props {
   image: string
   numQuestions: number
   color: string
+  index: number
 }
 
-const { url, title, image, numQuestions, color } = Astro.props
+const { url, title, image, numQuestions, color, index } = Astro.props
+
+const delay = `${index * 0.1}s`
 ---
 
 <a href={`/quiz/${url}`}>
   <article
-    class="relative flex h-full gap-5 p-5 overflow-hidden transition-transform border border-gray-400 cursor-pointer hover:scale-110 rounded-2xl group hover:border-sky-blue"
+    class="relative flex items-center h-full gap-5 p-5 overflow-hidden transition-transform border border-gray-600 cursor-pointer hover:scale-110 rounded-2xl group hover:border-sky-blue"
   >
     <picture>
       <img
@@ -27,17 +30,33 @@ const { url, title, image, numQuestions, color } = Astro.props
 
     <div>
       <h3 class="mb-2 font-bold">{title}</h3>
-      <p class="text-gray-400">{numQuestions} preguntas</p>
+      <p class="text-sm">{numQuestions} preguntas</p>
     </div>
 
     <ArrowRight
-      class="absolute w-8 h-8 text-gray-400 group-hover:text-sky-blue right-4 bottom-2 group-hover:translate-x-3 transition-transform"
+      class="absolute w-8 h-8 transition-transform opacity-50 group-hover:text-sky-blue right-4 bottom-2 group-hover:translate-x-3 group-hover:opacity-100"
     />
   </article>
 </a>
 
-<style define:vars={{ color }}>
+<style define:vars={{ color, delay }}>
+  a {
+    animation: scale-in 0.3s var(--delay) ease-in-out both;
+  }
+
   article {
     background: linear-gradient(to right, var(--color) -200%, transparent);
+  }
+
+  @keyframes scale-in {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
   }
 </style>
