@@ -13,9 +13,7 @@ const quizzes: Quiz[] = await Astro.glob('@quizzes/*.json')
 <Layout title="DevQuiz">
   <Background animation />
   <LinkGithub />
-  <main
-    class="flex flex-col max-w-screen-lg gap-20 px-10 py-20 mx-auto text-white"
-  >
+  <main class="flex flex-col max-w-screen-lg gap-20 px-10 py-20 mx-auto">
     <Header />
     <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
       {
