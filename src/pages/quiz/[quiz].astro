@@ -21,9 +21,7 @@ const quizData64 = btoa(JSON.stringify(quiz))
 <Layout title={quiz.quizTitle}>
   <Background />
 
-  <main
-    class="flex flex-col max-w-screen-md gap-10 px-5 pt-10 mx-auto text-white md:px-0"
-  >
+  <main class="flex flex-col max-w-screen-md gap-10 px-5 pt-10 mx-auto md:px-0">
     <QuizHeader
       title={quiz.quizTitle}
       numQuestions={quiz.questions.length}
@@ -38,12 +36,12 @@ const quizData64 = btoa(JSON.stringify(quiz))
       id="quiz-question"
       class="content-center text-2xl text-center select-none text-pretty min-h-28"
     >
-      {quiz.questions[3].question}
+      {quiz.questions[0].question}
     </p>
 
     <ul
       id="quiz-options"
-      class="flex flex-col gap-3 items-center text-center has-[.answerSuccess,.answerError]:pointer-events-none select-none"
+      class="flex flex-col gap-2 items-center text-center has-[.answerSuccess,.answerError]:pointer-events-none select-none"
     >
       {
         quiz.questions[0].options.map((op, i) => (

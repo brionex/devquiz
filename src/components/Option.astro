@@ -9,17 +9,17 @@ const { option, index } = Astro.props
 
 <li
   data-i={index}
-  class="w-[min(400px,100%)] border px-5 py-3 hover:scale-105 cursor-default duration-200 hover:bg-sky-blue hover:text-black rounded-2xl hover:font-bold text-pretty"
+  class="w-[min(400px,100%)] border border-gray-500 px-5 py-3 hover:scale-110 duration-300 cursor-default transition-[transform] hover:bg-sky-blue hover:text-black rounded-xl hover:font-bold text-pretty"
 >
   {option}
 </li>
 
 <style>
   .answerSuccess {
-    @apply text-black bg-green-400 font-bold animate-jump;
+    @apply text-black bg-green-400 font-bold animate-jump border-green-400;
   }
 
   .answerError {
-    @apply text-black bg-red-400 font-bold animate-jump;
+    @apply text-black bg-red-400 font-bold animate-shake border-red-400;
   }
 </style>
