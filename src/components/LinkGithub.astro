@@ -2,13 +2,17 @@
 import Github from '@icons/Github.astro'
 ---
 
-<div class="absolute z-10 top-5 right-10">
+<div class="absolute z-10 top-5 right-10 group">
   <a
     href="https://github.com/brionex/devquiz"
     target="_blank"
     rel="noopener noreferrer"
-    class="flex items-center gap-2 p-2 text-xl text-gray-400 transition-transform border border-gray-400 rounded-lg hover:text-sky-blue hover:border-current hover:scale-110"
+    class="flex items-center gap-2 p-2 text-xl transition-[transform_color] rounded-lg hover:text-black hover:scale-110"
   >
+    <div
+      class="absolute w-full scale-0 h-full bg-sky-blue top-0 left-0 rounded-full -z-10 group-hover:scale-100 transition-transform"
+    >
+    </div>
     <Github />
   </a>
 </div>
