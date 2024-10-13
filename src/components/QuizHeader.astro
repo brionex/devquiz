@@ -10,17 +10,19 @@ interface Props {
 const { title, numQuestions, image } = Astro.props
 ---
 
-<header class="flex items-center gap-5 text-xl text-gray-400">
+<header class="flex items-center text-xl">
   <a href="/" class="transition-transform hover:scale-125 hover:text-sky-blue">
-    <ArrowLeft class="w-8 h-8" />
+    <ArrowLeft class="w-10 h-10" />
   </a>
 
-  <div class="flex items-center flex-grow gap-2">
+  <div class="flex items-center flex-grow gap-5">
     <img src={image} class="w-8" alt="Logo de tecnología" />
     <h1>{title}</h1>
   </div>
 
   <p>
-    <span id="quiz-counter">1</span>/{numQuestions}
+    <span id="quiz-counter">1</span><span class="opacity-50"
+      >/{numQuestions}</span
+    >
   </p>
 </header>
