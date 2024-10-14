@@ -1,13 +1,12 @@
 ---
-import { ViewTransitions } from 'astro:transitions'
 import Layout from '../layouts/Layout.astro'
 import Background from '@components/Background.astro'
 import Footer from '@components/Footer.astro'
-
+import ArrowLeft from '@icons/ArrowLeft.astro'
 import ResultsSection from '@components/ResultsSection.tsx'
 ---
 
-<Layout title="Resultados | DevQuiz">
+<Layout title="DevQuiz | Resultados">
   <Background />
 
   <main
@@ -16,25 +15,43 @@ import ResultsSection from '@components/ResultsSection.tsx'
     <div class="flex flex-col items-center gap-5">
       <img id="quiz-image" alt="javascript logo" class="w-20 h-20" />
       <h1 id="quiz-title" class="text-3xl font-bold">Quiz de ...</h1>
+      <a
+        id="to-home"
+        href="/"
+        data-astro-history="replace"
+        class="flex items-center py-2 transition-transform hover:scale-110 hover:text-sky-blue"
+      >
+        <ArrowLeft /> Volver</a
+      >
     </div>
     <ResultsSection client:load />
     <Footer />
   </main>
 </Layout>
 
-<script>
-  const titleElem = document.querySelector('#quiz-title')
-  const imageElem = document.querySelector('#quiz-image')
-  const data = JSON.parse(localStorage.getItem('devquiz') || '')
-
-  if (titleElem && imageElem instanceof HTMLImageElement && data) {
-    imageElem.src = data.quizImage
-    titleElem.textContent = data.quizTitle
+<script is:inline>
+  if (!window.localStorage.getItem('devquiz')) {
+    window.location.href = '/'
   }
 </script>
 
-<style>
-  body {
-    scrollbar-gutter:;
-  }
-</style>
+<script>
+  document.addEventListener('astro:page-load', () => {
+    const isResultPage = window.location.pathname.startsWith('/results')
+    if (!isResultPage) return
+
+    const titleElem = document.querySelector('#quiz-title')
+    const imageElem = document.querySelector('#quiz-image')
+    const linkElem = document.querySelector('#to-home')
+    const data = JSON.parse(localStorage.getItem('devquiz') || '')
+
+    if (titleElem && imageElem instanceof HTMLImageElement && data) {
+      imageElem.src = data.quizImage
+      titleElem.textContent = data.quizTitle
+    }
+
+    linkElem?.addEventListener('click', () => {
+      localStorage.removeItem('devquiz')
+    })
+  })
+</script>
