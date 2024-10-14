@@ -5,203 +5,203 @@
   "color": "#f7df1e",
   "questions": [
     {
-      "question": "JavaScript es fundamental para la interactividad en la web. ¿Es cierto?",
-      "correctOption": 0,
-      "options": [
-        "Cierto",
-        "Falso",
-        "Solo en servidores",
-        "No es necesario"
-      ]
-    },
-    {
-      "question": "Para incluir un archivo JavaScript en HTML, se usa:",
-      "correctOption": 1,
-      "options": [
-        "&lt;script&gt;codigo.js&lt;/script&gt;",
-        "&lt;script src=\"archivo.js\"&gt;&lt;/script&gt;",
-        "&lt;javascript src=\"archivo.js\"&gt;&lt;/js&gt;",
-        "&lt;script href=\"archivo.js\"&gt;&lt;/script&gt;"
-      ]
-    },
-    {
-      "question": "¿Cuál es la palabra clave para declarar una variable que no cambiará?",
+      "question": "¿Qué valor tiene `typeof null` en JS?",
       "correctOption": 2,
       "options": [
-        "var",
-        "let",
-        "const",
-        "static"
+        "undefined",
+        "object",
+        "null",
+        "boolean"
       ]
     },
     {
-      "question": "La propiedad 'length' de un string devuelve:",
-      "correctOption": 0,
-      "options": [
-        "La cantidad de caracteres",
-        "El índice de la última letra",
-        "La posición del primer carácter",
-        "Un error si está vacío"
-      ]
-    },
-    {
-      "question": "¿Qué valor retorna '0 == false' en JavaScript?",
+      "question": "¿Qué devuelve `Array.isArray([])`?",
       "correctOption": 0,
       "options": [
         "true",
         "false",
-        "Error",
+        "undefined",
+        "null"
+      ]
+    },
+    {
+      "question": "¿Qué valor es falsy en JavaScript?",
+      "correctOption": 1,
+      "options": [
+        "1",
+        "0",
+        "{}",
+        "[]"
+      ]
+    },
+    {
+      "question": "¿Qué hace `Object.freeze()`?",
+      "correctOption": 2,
+      "options": [
+        "Convierte a null",
+        "Copia el objeto",
+        "Impide modificar el objeto",
+        "Convierte el objeto a string"
+      ]
+    },
+    {
+      "question": "¿Qué método añade un elemento al inicio de un array?",
+      "correctOption": 0,
+      "options": [
+        "unshift()",
+        "push()",
+        "pop()",
+        "shift()"
+      ]
+    },
+    {
+      "question": "¿Qué resultado da `[] == ![]` en JS?",
+      "correctOption": 0,
+      "options": [
+        "true",
+        "false",
+        "undefined",
+        "null"
+      ]
+    },
+    {
+      "question": "¿Cuál es la salida de `console.log('5' - 3)`?",
+      "correctOption": 0,
+      "options": [
+        "2",
+        "'53'",
+        "NaN",
         "undefined"
       ]
     },
     {
-      "question": "El método que permite mostrar información en la consola es:",
-      "correctOption": 1,
+      "question": "¿Qué operador usa JS para copiar un objeto?",
+      "correctOption": 2,
       "options": [
-        "alert()",
-        "console.log()",
-        "print()",
-        "display()"
-      ]
-    },
-    {
-      "question": "Para concatenar dos cadenas se utiliza:",
-      "correctOption": 0,
-      "options": [
-        "+",
-        "-",
         "*",
+        "||",
+        "...",
         "&"
       ]
     },
     {
-      "question": "¿Cuál es el resultado de 3 * '3' en JavaScript?",
-      "correctOption": 1,
-      "options": [
-        "9",
-        "33",
-        "Error",
-        "NaN"
-      ]
-    },
-    {
-      "question": "¿Qué hace el operador 'typeof'?",
-      "correctOption": 2,
-      "options": [
-        "Cambia el tipo de una variable",
-        "Devuelve el tipo de una variable",
-        "Compara dos tipos",
-        "No tiene uso"
-      ]
-    },
-    {
-      "question": "¿Cómo se declara una función anónima en JavaScript?",
-      "correctOption": 0,
-      "options": [
-        "const myFunc = function() {}",
-        "function myFunc() {}",
-        "let myFunc() => {}",
-        "function: myFunc() {}"
-      ]
-    },
-    {
-      "question": "La diferencia entre '==' y '===' es:",
-      "correctOption": 1,
-      "options": [
-        "No hay diferencia",
-        "El primero compara sin tipo",
-        "El primero es más estricto",
-        "El segundo no existe"
-      ]
-    },
-    {
-      "question": "¿Qué resultado retorna '5 + '5''?",
-      "correctOption": 0,
-      "options": [
-        "'55'",
-        "10",
-        "Error",
-        "NaN"
-      ]
-    },
-    {
-      "question": "Para convertir un string a número entero se usa:",
-      "correctOption": 2,
-      "options": [
-        "Number()",
-        "parseFloat()",
-        "parseInt()",
-        "int()"
-      ]
-    },
-    {
-      "question": "¿Cómo se crea un array vacío en JavaScript?",
-      "correctOption": 1,
-      "options": [
-        "let arr = []",
-        "let arr = ()",
-        "let arr = {}",
-        "let arr = new Array()"
-      ]
-    },
-    {
-      "question": "Para agregar un elemento al final de un array, se utiliza:",
+      "question": "¿Qué hace `JSON.parse()`?",
       "correctOption": 3,
       "options": [
-        "add()",
-        "insert()",
-        "append()",
-        "push()"
+        "Convierte a XML",
+        "Copia el objeto",
+        "Evalúa expresiones",
+        "Convierte texto a JSON"
       ]
     },
     {
-      "question": "¿Qué hace el método 'map()' en un array?",
-      "correctOption": 0,
-      "options": [
-        "Transforma cada elemento",
-        "Filtra elementos",
-        "Devuelve un valor único",
-        "Ordena el array"
-      ]
-    },
-    {
-      "question": "Para detectar errores en JavaScript se utiliza:",
+      "question": "¿Qué salida da `typeof NaN`?",
       "correctOption": 1,
       "options": [
-        "debugger;",
-        "try...catch",
-        "logError()",
-        "error()"
+        "NaN",
+        "number",
+        "undefined",
+        "object"
       ]
     },
     {
-      "question": "¿Qué método permite convertir un array en string?",
+      "question": "¿Qué es una 'closure' en JS?",
+      "correctOption": 3,
+      "options": [
+        "Una variable global",
+        "Una propiedad de clase",
+        "Un loop infinito",
+        "Una función con su contexto"
+      ]
+    },
+    {
+      "question": "¿Cuál no es un primitivo en JS?",
       "correctOption": 2,
       "options": [
-        "join()",
-        "slice()",
-        "toString()",
-        "concat()"
+        "string",
+        "number",
+        "function",
+        "boolean"
       ]
     },
     {
-      "question": "El operador '&&' se usa para:",
+      "question": "¿Qué hace el método `bind()`?",
       "correctOption": 1,
       "options": [
-        "Comparar",
-        "Operar lógicamente",
-        "Asignar valores",
-        "Sumar"
+        "Llama a una función",
+        "Asocia un contexto",
+        "Detiene el script",
+        "Copia propiedades"
       ]
     },
     {
-      "question": "¿Cómo se define una clase en JavaScript ES6?",
+      "question": "¿Cómo definir una propiedad no enumerable?",
+      "correctOption": 2,
+      "options": [
+        "obj['key'] = val",
+        "Object.clone()",
+        "Object.defineProperty()",
+        "Object.createProperty()"
+      ]
+    },
+    {
+      "question": "¿Qué salida da `{} + []` en la consola?",
       "correctOption": 0,
       "options": [
-        "class MyClass {}",
-        "function MyClass() {}",
-        "MyClass: {}",
-        "define class MyClass {}"
+        "0",
+        "'[object Object]'",
+        "NaN",
+        "undefined"
+      ]
+    },
+    {
+      "question": "¿Qué provoca un ciclo infinito?",
+      "correctOption": 1,
+      "options": [
+        "for (let i = 0; i++)",
+        "while (true) {}",
+        "do {} while (i > 0)",
+        "if (false) { }"
+      ]
+    },
+    {
+      "question": "¿Cómo evitar la mutación de un objeto?",
+      "correctOption": 2,
+      "options": [
+        "Object.copy()",
+        "Object.lock()",
+        "Object.freeze()",
+        "Object.seal()"
+      ]
+    },
+    {
+      "question": "¿Qué hace el método `reduce()`?",
+      "correctOption": 3,
+      "options": [
+        "Concatena arrays",
+        "Divide arrays",
+        "Reduce números",
+        "Acumula valores"
+      ]
+    },
+    {
+      "question": "¿Qué resultado da `1 + '1'` en JS?",
+      "correctOption": 1,
+      "options": [
+        "2",
+        "'11'",
+        "'2'",
+        "undefined"
+      ]
+    },
+    {
+      "question": "¿Qué hace `Promise.race()`?",
+      "correctOption": 3,
+      "options": [
+        "Rechaza promesas",
+        "Crea promesas",
+        "Copia promesas",
+        "Resuelve la primera promesa"
       ]
     }
   ]
