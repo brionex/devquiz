@@ -17,13 +17,14 @@ const quizzes: Quiz[] = await Astro.glob('@quizzes/*.json')
     <Header />
     <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
       {
-        quizzes.map((quiz) => (
+        quizzes.map((quiz, i) => (
           <QuizCard
             url={quiz.url}
             title={quiz.quizTitle}
             image={quiz.quizImage}
             numQuestions={quiz.questions.length}
             color={quiz.color}
+            index={i}
           />
         ))
       }
