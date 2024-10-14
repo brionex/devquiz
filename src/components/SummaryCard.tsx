@@ -16,7 +16,7 @@ const SummaryCard = ({
     error: 'text-red-400',
     warning: 'text-yellow-400',
     info: 'text-blue-400',
-    default: 'text-gray-400',
+    default: '',
   }
 
   return (

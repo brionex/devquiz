@@ -36,7 +36,7 @@ export default function ResultsSection() {
         />
       </section>
 
-      <div className="flex flex-col gap-5">
+      <section className="flex flex-col w-full gap-5">
         {quizSummary.details.map(
           (
             { selectedOption, correctOption, timeTaken, question, isCorrect },
@@ -53,7 +53,7 @@ export default function ResultsSection() {
             />
           )
         )}
-      </div>
+      </section>
     </>
   )
 }
