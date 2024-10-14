@@ -1,3 +1,4 @@
+import { navigate } from 'astro:transitions/client'
 import '@scripts/slidingText/slidingText.css'
 import { SlidingText } from '@scripts/slidingText/slidingText.js'
 import { calcDuration, sumDurations, formatDuration } from '@scripts/utils.js'
@@ -12,15 +13,7 @@ let currentQuestion = 0
 let startTime = 0
 
 let quiz = null
-const quizSummary = {
-  quizTitle: null,
-  quizImage: null,
-  numberQuestions: null,
-  correctCount: 0,
-  incorrectCount: 0,
-  duration: null,
-  details: [],
-}
+let quizSummary = null
 
 document.addEventListener('astro:page-load', updateScript)
 
@@ -36,6 +29,16 @@ function updateScript() {
   questionElem = document.querySelector('#quiz-question')
   optionsElem = document.querySelector('#quiz-options')
 
+  quizSummary = {
+    quizTitle: null,
+    quizImage: null,
+    numberQuestions: null,
+    correctCount: 0,
+    incorrectCount: 0,
+    duration: null,
+    details: [],
+  }
+
   startTime = Date.now()
   quiz = JSON.parse(atob(document.querySelector('[data-quiz]').dataset.quiz))
   quizSummary.quizImage = quiz.quizImage
@@ -45,8 +48,6 @@ function updateScript() {
 
 function handlerClick({ target }) {
   if (!target.closest('li')) return
-
-  console.log(target)
 
   const optionIndex = +target.dataset.i
   const questionData = quiz.questions[currentQuestion]
@@ -110,5 +111,7 @@ function finalizeQuiz() {
   quizSummary.numberQuestions = quiz.questions.length
   quizSummary.duration = formatDuration(sumDurations(times))
   localStorage.setItem('devquiz', JSON.stringify(quizSummary))
-  window.location.href = '/results'
+  navigate('/results', {
+    history: 'replace',
+  })
 }
