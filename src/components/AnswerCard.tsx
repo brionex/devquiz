@@ -16,8 +16,8 @@ const CardResult = ({
   timeTaken,
 }: CardSummaryProps) => {
   return (
-    <article className="overflow-hidden text-gray-400 border border-gray-500 rounded-2xl">
-      <div className="flex gap-5 p-5 font-semibold border-b bg-midnight-blue/40 text-pretty border-b-gray-500">
+    <article className="overflow-hidden text-gray-400 border border-gray-600 rounded-2xl">
+      <div className="flex gap-5 p-5 font-semibold border-b bg-midnight-blue/40 text-pretty border-b-gray-600">
         <span>{index + 1}</span>
         <h3 className="flex-grow">{question}</h3>
         <span>
