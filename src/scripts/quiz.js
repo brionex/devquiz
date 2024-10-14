@@ -44,7 +44,9 @@ function updateScript() {
 }
 
 function handlerClick({ target }) {
-  if (target.tagName !== 'LI') return
+  if (!target.closest('li')) return
+
+  console.log(target)
 
   const optionIndex = +target.dataset.i
   const questionData = quiz.questions[currentQuestion]
@@ -87,7 +89,11 @@ function updateQuizSummary(
 
 function nextQuestion() {
   SlidingText({
-    elements: [counterElem, questionElem, ...Array.from(optionsElem.children)],
+    elements: [
+      counterElem,
+      questionElem,
+      ...Array.from(optionsElem.querySelectorAll('span')),
+    ],
     texts: [
       currentQuestion + 1,
       quiz.questions[currentQuestion].question,
